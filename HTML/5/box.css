@@ -1,0 +1,51 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: bisque;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 3;
+    border: 4mm ridge rgba(211, 220, 50, .6);
+}
+
+#navbar .link {
+    position: absolute;
+    padding: auto;
+    left: 35%;
+    top: 10px;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    position: relative;
+    background-color: aqua;
+    top: 100px;
+    left: 30px;
+}
+.box2 {
+    position: absolute;
+    background-color: beige;
+    top: 130px;
+    left: 70px;
+}
+.box3 {
+    position: fixed;
+    background-color: black;
+    top: 160px;
+    left: 100px;
+    
+}
+ .box4 {
+    position: sticky;
+    background-color:blue;
+    top: 100px;
+    left: 140px;
+}

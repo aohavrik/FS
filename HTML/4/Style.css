@@ -1,0 +1,66 @@
+
+
+img{ 
+    width: 350px;
+    display: block;
+    margin: 10px auto;
+}
+
+video{
+    width: 350px;
+    display: block;
+    margin: 10px auto;
+}
+audio{
+    display: block;
+    margin: 10px auto;
+}
+
+.Navig {
+    background-color: aquamarine;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+#textDekor {
+    text-decoration:none ;
+}
+
+.Navig a {
+    margin: 0px 20px;
+    cursor: grabbing;
+
+}
+
+.text1, .text2 {
+    font-size: 25px;
+    font-size: 10px;
+    background-color:blanchedalmond;
+    color: rgb(14, 135, 241);
+    user-select: none;
+}
+.text1 p, .text1 span {
+    font-weight: 800;
+}
+
+a[target]{
+    background-color: rgb(213, 161, 161);
+}
+a[href="./2/2.1.html#Virhs"]{
+    background-color: darkgoldenrod;
+}
+hr + div {
+    width: 500px;
+}
+a[href^="https"]{
+    color: orchid;
+}
+
+div ~ p {
+    width: 250px;
+}
+
+.n1 > span {
+    background-color: blueviolet;
+    color: antiquewhite;
+}

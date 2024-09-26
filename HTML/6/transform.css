@@ -1,0 +1,123 @@
+#navig {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: bisque;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 3;
+    border-top: 2mm ridge rgba(211, 220, 50, .6);
+    border-bottom:2mm ridge rgba(211, 220, 50, .6);
+}
+
+#navig .Link_a {
+    position: absolute;
+    padding: 0 20px;
+    left: 20%;
+    top: 10px;
+}
+
+.Link_a a {
+    text-decoration: none;
+    color: rgb(4, 122, 35);
+    /* padding: 0 45px; */
+}
+
+.Link_a a:hover {
+    color: darkcyan;
+    text-shadow: #FC0 1px 0 10px;
+}
+span {
+    color: rgb(4, 122, 35);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+    margin: 30px;
+    position: relative;
+    top: 50px;
+}
+
+
+
+.box1 {
+
+    filter: grayscale(1) blur(2px) opacity(.8);
+    /*  margin-top: 150px; */
+}
+
+.box1:hover {
+    filter: grayscale(0) blur(0px) opacity(1);
+    transform: scale(1.2);
+}
+
+.box2 {
+    position: relative;
+    top: 130px;
+    background-color: aqua;
+
+}
+
+.box2:hover {
+    transform: scale(2) translate(100px, 50px) rotate(360deg);
+}
+
+.box3 {
+    background-color: blue;
+    position: relative;
+    top: 130px;
+}
+
+.box3:hover {
+    animation: 2s animalQ;
+}
+
+.box4 {
+    background-color: black;
+    position: relative;
+    top: 130px;
+    animation: 6s animalQ2 infinite;
+}
+
+
+
+@keyframes animalQ {
+    from {
+        background-color: black
+    }
+
+    to {
+        background-color: rgb(5, 92, 36);
+    }
+}
+
+@keyframes animalQ2 {
+    0% {
+        background-color: black;
+        
+    }
+
+    20% {
+        background-color: rgb(1, 41, 15);
+        transform: scale(1.2);
+    }
+
+    40% {
+        background-color: rgb(3, 100, 37);
+        transform: scale(1.4);
+    }
+
+    60% {
+        background-color: rgb(6, 143, 54);
+        transform: scale(1.6);
+    }
+
+    80% {
+        background-color: rgb(6, 216, 80);
+      
+    }
+}

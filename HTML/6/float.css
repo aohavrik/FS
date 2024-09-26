@@ -1,0 +1,64 @@
+#navig {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: bisque;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 3;
+    border-top: 2mm ridge rgba(211, 220, 50, .6);
+    border-bottom:2mm ridge rgba(211, 220, 50, .6);
+}
+
+#navig .Link_a {
+    position: absolute;
+    padding: 0 20px;
+    left: 20%;
+    top: 10px;
+}
+
+.Link_a a {
+    text-decoration: none;
+    color: rgb(4, 122, 35);
+    /* padding: 0 45px; */
+}
+
+.Link_a a:hover {
+    color: darkcyan;
+    text-shadow: #FC0 1px 0 10px;
+}
+span {
+    color: rgb(4, 122, 35);
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+}
+.box1 {
+    float: left;
+    background-color:antiquewhite;
+   
+}
+
+.box2 {
+    float: left;
+    background-color: aqua;
+}
+
+.box3 {
+    float: right;
+    background-color: aquamarine;
+}
+
+.box4{
+    float: right;
+    background-color: beige;
+}
+
+.box5 {
+    background-color: bisque;
+    clear: both;
+}

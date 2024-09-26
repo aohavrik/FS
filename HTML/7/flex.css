@@ -1,0 +1,45 @@
+
+.orang{
+    background-color: orange;
+}
+.headwrap{
+    display: flex;
+}
+.head {
+    width: 100%;
+    height: 120px;
+}
+
+.divwrap {
+    display: flex;
+    justify-content:flex-start ;
+}
+
+.box {
+    width: 25%;
+    height: 440px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: deepskyblue;
+}
+
+.box4 {
+    background-color: black;
+}
+.footwrap{
+    display: flex;
+}
+.foot {
+    background-color: orange;
+    width: 100%;
+    height: 120px;
+}

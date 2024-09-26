@@ -1,0 +1,36 @@
+.tab1 {
+    width: 50%;
+    margin: auto;
+}
+img {
+    width: 270px;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: bisque;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 3;
+    border: 4mm ridge rgba(211, 220, 50, .6);
+}
+
+#navbar .link {
+    position: absolute;
+    padding: auto;
+    left: 35%;
+    top: 10px;
+  
+}
+
+table {
+    position: absolute;
+    top: 150px;
+    left: 20%;
+}
+.im{
+    width: 800px;
+}

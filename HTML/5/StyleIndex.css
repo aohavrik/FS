@@ -1,0 +1,114 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: bisque;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 3;
+    border: 2mm ridge rgba(211, 220, 50, .6);
+}
+
+#navbar .link {
+    position: absolute;
+    padding: auto;
+    left: 35%;
+    top: 10px;
+  
+}
+
+img {
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(4, 122, 35);
+    /* padding: 0 45px; */
+}
+
+.par {
+    position: relative;
+    top: 85px;
+}
+
+.par p {
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    padding: 0 40%;
+}
+
+.par a {
+    position: absolute;
+    border: solid;
+    border-radius: 3px;
+    border-color: chocolate;
+    background-color: blanchedalmond;
+    z-index: 2;
+    left: 150px;
+    top: -10px;
+
+}
+
+.voice>span {
+    position: absolute;
+    border: solid;
+    border-radius: 3px;
+    border-color: chocolate;
+    background-color: blanchedalmond;
+    z-index: 2;
+    left: 50%;
+    top: -2px;
+    transform: translate(-50%, -50%);
+
+}
+
+.voice {
+    position: relative;
+    top: 100px
+}
+
+.voice p {
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px 5px;
+}
+
+/* .box1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 300px;
+    background-color: red;
+    top: 500px;
+}
+
+.box2 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    top: 300px;
+    left: 150px;
+}
+
+.box3 {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    top: 50px;
+    left: 850px;
+}
+
+.box4 {
+    position: sticky;
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    top: 20px;
+} */

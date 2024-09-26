@@ -1,0 +1,249 @@
+.heads {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(249, 124, 249);
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 70%;
+    height: 65%;
+}
+
+.black {
+    background-color:black;
+    width: 50%;
+    height: 30%;
+    
+}
+
+.textnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: darkgray;
+}
+.boxmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    width: 25%;
+    height: 200px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: orange;
+}
+
+.box3 {
+    background-color: aqua;
+}
+
+.box4 {
+    background-color: rgb(255, 226, 64);
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    width: 100%;
+    height: 15px;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+.blokleft{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    width: 33.3%;
+    height: 600px;
+    align-items: flex-start;
+}
+.greentext{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+.textleft {
+    height: 15px;
+}
+.wrap_left{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:green;
+    display: flex;
+    flex-direction: column;
+    align-items:center
+}
+.orang_top{
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    width: 70%;
+    height: 20%;
+}
+.vertikal_color{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    height: 80%;
+}
+.pink_left_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(224, 160, 182);
+}
+.gold_left_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color:rgb(253, 225, 70);
+}
+.blokcenter{
+    display: flex;
+    background-color:aqua;
+    width: 33.3%;
+    height: 600px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.centaltext{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+.wrap_centarl {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(72, 99, 72);
+    align-items: flex-start;
+}
+.Columnn{
+    width: 33.3%;
+    height: 100%;
+}
+.Column1{
+    background-color: red;
+}
+.Column2{
+    display: flex;
+    background-color: gold;
+    flex-direction: column;
+}
+.gooldtext{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+.two1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+    align-items: flex-end;
+}
+.a_c{
+    width: 50%;
+    height: 100%;
+    background-color:orange;
+}
+.b_c{
+    width: 50%;
+    height: 30%;
+    background-color:red;
+}
+.Column3{
+    background-color: orange;
+}
+.blokright{
+    display: flex;
+    background-color:blue;
+    width: 33.3%;
+    height: 600px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.wrap_right {
+    display: flex;
+    align-items: flex-end;
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+.last{
+    width: 33.3%;
+}
+.air{
+    height: 40%;
+}
+.last_l {
+    height: 30%;
+    background-color:aqua;
+}
+.last_c {
+    background-color: gold;
+    margin-bottom: 10%;
+}
+.last_r{
+    background-color: orange;
+    margin-bottom: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.blacktext1_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+}
+
+.blacktext2_wrap {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content:  flex-start;
+    align-items:center;
+}
+.blacktext {
+    display: flex;
+    width: 60%;
+    background-color:black;
+    color: aqua;
+    justify-content: center;
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+
