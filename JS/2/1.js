@@ -23,35 +23,35 @@ document.write(b2);
 document.write('<hr>');
 
 let b3 = b1+1
-document.write(b1);
+document.write(b3);
 document.write('<hr>');
 
 let b4 = b1/2
-document.write(b1);
+document.write(b4);
 document.write('<hr>');
 
 let b5 = b4*3
-document.write(b1);
+document.write(b5);
 document.write('<hr>');
 
 let b6 = (b3*2)/(b2*3)
-document.write(b1);
+document.write(b6);
 document.write('<hr>');
 
 let b7 = b1*3
-document.write(b1);
+document.write(b7);
 document.write('<hr>');
 
 let b8 = 13-2
-document.write(b1);
+document.write(b8);
 document.write('<hr>');
 
 let b9 = ++b1
-document.write(b1);
+document.write(b9);
 document.write('<hr>');
 
 let b10 = b3+b8
-document.write(b1);
+document.write(b10);
 document.write('<hr>');
 
 
@@ -91,16 +91,16 @@ let d1 = 1+1
 console.log(d1)
 
 let d2 = 2*2
-console.log(d1)
+console.log(d2)
 
 let d3 = 10/2
-console.log(d1)
+console.log(d3)
 
 let d4 = 10-3
-console.log(d1)
+console.log(d4)
 
 let d5 = 10%3
-console.log(d1)
+console.log(d5)
 
 let d6 = 6**2
-console.log(d1)
+console.log(d6)
