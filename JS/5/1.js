@@ -3,9 +3,25 @@
 /* * Кожне завдання повинно бути виконане на 5 циклах: for, for of, for in, while, do while */
 
 /* 1. Напишіть цикл, який виводить всі парні числа від 20 до 32. */
-for (i = 20; i <= 32; i = i + 2) {
-   console.log(i);
+//FOR
+for (i = 20; i <= 32; i += 2) {
+   console.log(i)
 }
+console.log("---")
+//FOR OF
+let couples = [20, 22, 24, 26, 28, 30, 32]
+for (let i of couples) {
+   console.log(i)
+}
+console.log("---")
+// FOR IN
+let couples2 = { q:20, w:22, e:24, r:26, t:28, y:30, u:32}
+for (let i in couples2) {
+   console.log(couples2[i])
+}
+
+
+console.log("---")
 /* 2. Створіть масив зі списком:
 
    вашого улюбленого фрукту,
@@ -15,12 +31,34 @@ for (i = 20; i <= 32; i = i + 2) {
    вашого віку.
 
    Виведіть цей проітерований масив на консоль і визначте його тип даних. */
+
+//FOR
 let favorite = ['Банан', 'синій', 'Андрій', 10, 27]
 for (let i = 0; i < favorite.length; i++) {
    console.log(typeof favorite[i])
 }
 console.log(favorite)
+console.log("---");
 
+//FOR OF
+let favorite2 = ['Банан', 'синій', 'Андрій', 10, 27]
+for (let el of favorite2) {
+   console.log(typeof el)
+}
+console.log(favorite2)
+console.log("---");
+
+
+
+
+
+//FOR IN 
+let favorite3 = ['Банан', 'синій', 'Андрій', 10, 27]
+for (let el in favorite3) {
+   console.log(typeof el)
+}
+console.log(favorite3)
+console.log("---");
 /* 3. Напишіть цикл який виводить всі непарні числа від 17 до 39. */
 for (i = 17; i <= 39; i = i + 2) {
    console.log(i);
