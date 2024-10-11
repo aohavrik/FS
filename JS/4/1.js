@@ -61,7 +61,10 @@ console.log(list[2][1][1], list[2][1][0])
 5. Створіть масив зі списком вашого улюбленого фрукту, вашого улюбленого кольору, і вашого віку.
    Виведіть цей масив на консоль і визначте його тип даних. */
 let favorite = ['банан', 'синій', 27]
-console.log(favorite, typeof favorite[0], typeof favorite[1], typeof favorite[2]);
+for (let i = 0; i < favorite.length; i++) {
+ console.log(typeof favorite[i])
+}
+console.log(favorite)
 
 /* 6. Напишіть 2 prompt які приймають два числа. виведіть більше з них. Використайте конструкцію if-else. */
 let number1 = prompt()
