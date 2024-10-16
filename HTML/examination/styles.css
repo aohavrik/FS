@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 body {
     font-family: 'Coolvetica', sans-serif;
     font-style: normal;
@@ -24,9 +28,9 @@ img {
 }
 
 .container {
-    width: 1920px;
-    padding-left: 120px;
-    padding-right: 120px;
+    max-width: 1920px;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -181,7 +185,7 @@ img {
     letter-spacing: 0.01em;
     color: #E56000;
 
-    margin-right: 540px;
+    margin-right: 400px;
     padding-top: 35px;
 }
 
@@ -203,10 +207,9 @@ img {
 .table-row {
     border-bottom: 1px solid #B8B8B8;
     display: flex;
-
     margin-bottom: 20px;
     padding-bottom: 20px;
-    width: 1027px;
+    width:100%;
 
 }
 
@@ -940,10 +943,9 @@ img {
 
 .second-user {
     width: 1708px;
-
     border: 3px solid #E56000;
     border-right: none;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-bottom: 200px;
 }
 
@@ -1340,5 +1342,15 @@ img {
     .identity-container {
         display: block;
         margin-bottom: 100px;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .container {
+        max-width: 2560px;
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+    .text {
+        font-size: 50px;
     }
 }
