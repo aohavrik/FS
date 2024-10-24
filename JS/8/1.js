@@ -6,14 +6,14 @@
 console.log('1. Створіть функцію для обчислення факторіалу числа.');
 
 let num1 = Number(prompt('Введіть число для обчислення його факторіалу:'))
-function calculateFactorial(n) {
-    let res = 1
+const calculateFactorial = n => {
+    let res = 1;
     for (let i = 1; i <= n; i++) {
-        res *= i
+        res *= i;
     }
-    return res
+    return res;
 }
-console.log( `факторіл числа ${num1} = ${calculateFactorial(num1)}`);
+console.log(`факторіл числа ${num1} = ${calculateFactorial(num1)}`);
 
 //2. Підрахунок кількості слів у рядку.
 //   Створіть функцію countSymb(sym), яка приймає рядок через prompt
@@ -27,12 +27,11 @@ function countSymb(sym) {
 
     let CalcSym = 0
 
-    for (let i = 0; i<sym.length; i++){
+    for (let i = 0; i < sym.length; i++) {
         if (
-            sym[i] !== ' ' &&  sym[i] !== '.' && sym[i] !== ',' && 
+            sym[i] !== ' ' && sym[i] !== '.' && sym[i] !== ',' &&
             sym[i] !== ';' && sym[i] !== ':' && sym[i] !== '!' &&
-            sym[i] !== '?' && sym[i] !== '>' && sym[i] !== '<') 
-            {
+            sym[i] !== '?' && sym[i] !== '>' && sym[i] !== '<') {
             CalcSym++
         }
     }
@@ -49,7 +48,7 @@ console.log(`У вашому рядку: ${leng}, кількість букв :$
 console.log('3. Створіть функцію для визначення простого числа (ціле число це число без коми: 1, 44, 100 ітд).');
 
 function isPrime(number) {
-    if (number % 1 === 0){
+    if (number % 1 === 0) {
         console.log(`число ${number} є простим`)
         return true
     } else {
@@ -65,16 +64,16 @@ console.log(isPrime(Number(prompt('введіть число'))));
 //   Після цього викликайте цю функцію, якщо паролі співпадають має вивестись (console): Успіх, а в іншому випадку: Невдача.
 console.log('4. Запит на пароль.');
 
-function  passwordPrompt(pas1, pas2){
+function passwordPrompt(pas1, pas2) {
 
     pas1 = prompt('введіть пароль')
     pas2 = prompt('Повторіть пароль')
 
-    if (pas1 === null || pas1 === "" || pas2 === null || pas2 === ""){
+    if (pas1 === null || pas1 === "" || pas2 === null || pas2 === "") {
         console.log("Рядок пустий");
-    } else if (pas1 === pas2){
+    } else if (pas1 === pas2) {
         console.log('Успіх')
-    } else if(pas1 != pas2) {
+    } else if (pas1 != pas2) {
         console.log('Невдача')
     }
 
@@ -89,24 +88,24 @@ passwordPrompt()
 
 console.log('5. Факторіал чисел в діапазоні.');
 
-function factorialRange(num1, num2)  {
+function factorialRange(num1, num2, num3) {
 
     let res = {}
 
-    for( let i=num1; i <= num2; i++){
-        res[i] = calculateFactorial(i);
-       
+    for (let i = num1; i <= num2; i++) {
+        res[i] = num3(i);
     }
-    for (let i in res){
+    for (let i in res) {
         console.log(`факторіал числа ${i} = ${res[i]}`);
     }
 
     return res
 
 }
-
-factorialRange(Number(prompt("Введіть початок діапазону факторіала: ")), 
-               Number(prompt("Вкажіть кінець діапазону файкторіалу: ")))
+// третій параметр задав як параметр для налаштування дій: будь то обчислення факторіалу, будь то інші методи роботи з числами
+factorialRange(Number(prompt("Введіть початок діапазону факторіала: ")),
+    Number(prompt("Вкажіть кінець діапазону файкторіалу: ")),
+    calculateFactorial)
 
 
 //6. Калькурятор.
@@ -117,7 +116,7 @@ console.log('6. Калькурятор.');
 
 function calc(num1, num2, action) {
     let res
-   
+
     if (num1 === null || num1 === "" || num2 === null || num2 === "" || action === null || action === "") {
         console.log("Рядок пустий");
     } else if (action == "+") {
