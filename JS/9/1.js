@@ -58,6 +58,10 @@ function FuncA(a, b) {
     return a > b
 }
 
+function FuncB(a, b) {
+    return a < b
+}
+
 const arrA = bubbleSort(refuge, FuncA)
 
 console.log('від меншого до більшого\n', arrA);
