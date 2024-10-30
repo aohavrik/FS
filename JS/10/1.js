@@ -88,7 +88,7 @@ console.log('8. Створіть prompt в якому потрібно проі�
 let numArr = +prompt("Введіть число");
 let arrNum1 = []
 for (let y = 0; y <= numArr; y ++) {
-arrNum1[i]= i
+arrNum1[y]= y
 }
 arrNum1.forEach(el => {
     if (el >= 100){
