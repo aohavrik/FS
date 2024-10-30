@@ -179,9 +179,40 @@ console.log(obj.getinfo); */
 
 //5 Напиши функцию, которая принимает объект книги как аргумент и добавляет свойство "рейтинг" (например, от 1 до 5). Затем вызови эту функцию и добавь рейтинг в объект книги.
 
-function fnObj(obj){
+/* function fnObj(obj){
     obj.reit = "5/5"
 }
 
 fnObj()
 console.log(obj);
+ */
+function fetchData(cal, lac) {
+    if (Math.random() < 0.5) {
+        setTimeout(cal, 1000)
+    } else {
+        setTimeout(lac, 1000)
+    }
+}
+
+
+function handleSuccess() {
+    console.log('Data received');
+
+}
+
+function handleError() {
+    console.log('Error fetching data');
+
+}
+fetchData(handleSuccess, handleError)
+
+
+
+
+
+
+
+
+let balance_grn = prompt('Введіть суму у грн: ')
+    balance_usd = balance_grn / 41.5
+print(`${balance_grn} грн дорівнює ${balance_usd} доларів`)
