@@ -28,6 +28,6 @@ print(f"Температура в градусах Фаренгейта: {far}")
 #4
 
 num = input("Введіть чотиризначне число: ")
-rev_num = number[3] + number[2] + number[1] + number[0]
+rev_num = num[3] + num[2] + num[1] + num[0]
 
 print("Перевернуте число:", rev_num)
