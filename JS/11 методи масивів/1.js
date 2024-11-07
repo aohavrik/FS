@@ -7,9 +7,9 @@ let res1 = arr.find((el, ind) => {
 console.log(res1)
 
 
-let slova = ['йцу', 'кавун', 'яблуко']
-let indexZBukvoyuA = slova.findIndex('яблуко')
-console.log(indexZBukvoyuA)
+let slova = ['йцу', 'кавун', 'яблуко'];
+let indexZBukv = slova.findIndex(a => a === 'яблуко');
+console.log(indexZBukv);
 
 console.log("indexOf")
 
