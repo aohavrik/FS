@@ -25,4 +25,10 @@ while 0 < por:
 for i in range(1, 11):
     sqr = i*i
     print(sqr)
-    
+
+    #6 елочка
+    height = int(input('num: '))
+
+    for i in range(height):
+        print(" " * (height - i - 1), end="")
+        print("*" * (2 * i + 1))
