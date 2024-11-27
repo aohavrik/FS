@@ -1,0 +1,53 @@
+# 1
+import random
+
+random_nums = []
+for _ in range(5):
+    num = random.randint(1, 10)
+    random_nums.append(num)
+print(random_nums)
+
+max_num = max(random_nums)
+print(max_num)
+
+for i in range(len(random_nums)):
+    random_nums[i] *= 2
+print(random_nums)
+
+nums = []
+for x in range(1, 5+1):
+    nums.append(x**2)
+print(nums)
+
+lines = []
+
+for num in nums:
+    lines.append(str(num))
+lines.pop(-1)
+print(lines)
+
+#2
+
+inp_user = input('введіть  числа списку через пробіл: ')
+inp_user_num = int(input('введіть число для підрахунку скільки разів це число зустрічається: '))
+
+arr= list(map(int, inp_user.split()))
+
+culc = 0
+for i in range(len(arr)):
+    if arr[i] == inp_user_num:
+        culc+=1
+print(f'ваше число {inp_user_num} зустрічається в масиві {culc} разів')
+
+#3
+
+
+inp_user = input('введіть  числа списку через пробіл: ')
+arr = list(map(int, inp_user.split()))
+
+sum = 0
+avg = 0
+for i in range(len(arr)):
+    sum += arr[i]
+avg = sum / len(arr)
+print(f'сумма всіх елементів: {sum}, середнє число: {avg} ')
