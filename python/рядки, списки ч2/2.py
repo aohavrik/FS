@@ -36,6 +36,7 @@ def minmaxArr(minmax):
     arr.append(min(minmax))
     arr.append(max(minmax))
     return (arr)
+
 import random
 random_nums1 = []
 random_nums2 = []
