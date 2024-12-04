@@ -133,27 +133,40 @@ Son.prototype.studies = function (stud) {
 // 6. Створити КЛАС People із полями: name, age, isMarried, isChilds, job
 //    створити 3 інстанси класу People і вивести їхні поля в консоль.
 class People {
-    constructor(name, job) {
+    name
+    age=0
+    job
+    isMarried = false
+    isChilds=0
+    constructor(name, job, isChilds, age, isMarried) {
         this.name = name
-        this.age = 0
+        this.age = age
         this.job = job
-        this.Married = false
-        this.isChilds = 0
+        this.isMarried = isMarried
+        this.isChilds =isChilds
     }
 }
 let newPeople = new People('Станіслав', 'Шахтар')
+
+console.log(newPeople);
 
 
 // 7. Створити КЛАС Tiger із полями: name, kind, age, speed, wight, height
 //    Додатково створити методи: changeName, addAge, changeSpeed, run
 //    Вивести поля класу в консоль та використати методи.
 class Tiger {
+    name
+    kind
+    age=0
+    speed
+    weight
+    height
 
-    changeName(newName) {
+    nName(newName) {
         this.name = newName;
         console.log(`Ім'я змінено на: ${this.name}`);
     }
-    changeSpeed(newSpeed) {
+    nSpeed(newSpeed) {
         this.speed = newSpeed;
         console.log(`${this.name} буже бігать зі швидкістю ${this.speed} км/год.`);
     }
@@ -177,7 +190,8 @@ class Tiger {
 
 let newTiger = new Tiger('Шерхан', 'Бенгальський тигр', 5, 60, 200, 1.2);
 
+console.log(newTiger);
 
-newTiger.changeName('Раджа');
-newTiger.changeSpeed(70);
+newTiger.nName('Раджа');
+newTiger.nSpeed(70);
 newTiger.run();
