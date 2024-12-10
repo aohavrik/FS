@@ -891,32 +891,34 @@
 // Дан массив со числами. Проверьте, что все числа из этого массива содержат в себе цифру 3.
 
 
-let numg2 = [23, 13, 22]
+// let numg2 = [23, 13, 22]
+// let big3 = true
 
-
-let big3 = true
-
-for (i of numg2) {
-	let n3 = i.toString().split('')
-	if (n3[0] != 3 && n3[n3.length - 1] != 3) {
-		big3 = false;
-	}
-}
-if (big3 == true) {
-	console.log("всі мають 3");
-} else {
-	console.log('не всі мають 3');
-}
+// for (i of numg2) {
+// 	let n3 = i.toString().split('')
+// 	if (n3[0] != 3 && n3[n3.length - 1] != 3) {
+// 		big3 = false;
+// 	}
+// }
+// if (big3 == true) {
+// 	console.log("всі мають 3");
+// } else {
+// 	console.log('не всі мають 3');
+// }
 
 
 // Дана строка в формате:
 
-// 'kebab-case'
+//  'kebab-case'
 // Преобразуйте ее в формат:
 
 // 'snake_case'
 
+// let keba = 'kebab-case';
 
+// Преобразуем kebab-case в snake_case
+// keba = keba.replace(/kebab-/g, 'snake_');
+// console.log(keba);
 
 
 
@@ -927,8 +929,8 @@ if (big3 == true) {
 
 // 'camelCase'
 
-
-
+// keba =  keba.replace(/snake_case/g, 'camelCase');
+// console.log(keba);
 
 // Дана строка в формате:
 
@@ -937,7 +939,8 @@ if (big3 == true) {
 
 // 'snake_case'
 
-
+// keba =  keba.replace(/camelCase/g, 'snake_case');
+// console.log(keba);
 
 
 
@@ -952,3 +955,29 @@ if (big3 == true) {
 // 	[1, 2, 3],
 // 	[1, 2, 3],
 // ]
+
+
+// let arrbig = []
+// for(i=1; i<=5; i++){
+// 	let arrbig2 = []
+// 	for(j=1;j<=3; j++){
+// 		arrbig2.push(j)
+// 	}
+// 	arrbig.push(arrbig2)
+// }
+// console.log(arrbig);
+
+
+
+
+
+
+// 3.9
+
+
+
+
+
+
+
+// Дана строка. Проверьте, что эта строка состоит только из цифр.
