@@ -981,3 +981,82 @@
 
 
 // Дана строка. Проверьте, что эта строка состоит только из цифр.
+
+
+
+
+
+
+
+// Дана строка. Проверьте, что эта строка состоит только из четных цифр.
+
+
+
+
+
+// Дан массив со числами. Удалите из него числа, имеющие два и более нуля.
+
+let two0arr = []
+
+for (i = 0; i <= 1000; i += 50) {
+	two0arr.push(i)
+}
+
+
+two0arr.forEach((i)=>{
+	let zxc = i.toString().split('')
+	zxc.filter((j)=> j == 0)
+})
+
+console.log(zxc);
+
+
+
+
+
+// Найдите все числа от 1 до 1000, сумма цифр которых равна 13.
+// let arrsum1000 = []
+// let arrsum13 = []
+// for(i=0; i<=1000; i++){
+// 	arrsum1000.push(i)
+// }
+// for( i of arrsum1000){
+// 	let er = arrsum1000[i].toString().split('')
+// 	if(er[0]+er[er.length-1]==13){
+// 		arrsum13.push(i)
+// 	}
+// }
+// console.log(`числа сма цифр яких = 13: ${arrsum13}`);
+
+
+
+
+
+
+// Сформируйте с помощью циклов следующий массив:
+
+// [
+// 	[1, 2, 3],
+// 	[4, 5, 6],
+// 	[7, 8, 9],
+// ]
+
+
+// let order = []
+// let order1 = []
+// let order2 = []
+// let order3 = []
+// for (j = 1; j <= 9; j++) {
+// 	if (j <= 3) {
+// 		order1.push(j)
+// 	} else if (j > 3 && j <= 6) {
+// 		order2.push(j)
+// 	} else if (j > 6 && j <= 9) {
+// 		order3.push(j)
+// 	}
+// }
+// order.push(order1)
+// order.push(order2)
+// order.push(order3)
+
+// console.log(order);
