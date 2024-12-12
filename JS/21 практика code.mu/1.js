@@ -993,10 +993,10 @@
 
 // if(onlik == true){
 // 	 console.log('log всі цифри');
-	 
+
 // } else {
 // 	console.log('не всі тут цири');
-	
+
 // }
 
 
@@ -1343,7 +1343,19 @@
 // №1
 // Сделайте функцию, которая параметром будет принимать число и возвращать сумму его цифр.
 
+// function sumaCyfr(chyslo) {
+//     let suma = 0
 
+//     while (chyslo > 0) {
+//         suma += chyslo % 10
+//         chyslo = Math.floor(chyslo / 10)
+//     }
+
+//     return suma
+// }
+
+// console.log(sumaCyfr(123))
+// console.log(sumaCyfr(4567))
 
 // №2
 // Сделайте функцию, которая параметром будет принимать число и удалять из него нули.
@@ -1355,14 +1367,14 @@
 
 // №3
 // Сделайте функцию, которая будет возвращать сколько дней прошло или осталось до заданной даты в году, в зависимости от того, была уже эта дата или нет.
-function dniDoDaty(data) {
-    let nows = new Date()
-    let tar = new Date(data)
-    let ms = 1000 * 60 * 60 * 24
-    let dif = tar - nows;
-    return Math.round(dif / ms)
-}
-console.log(dniDoDaty('2024-12-25'))
+// function dniDoDaty(data) {
+//     let nows = new Date()
+//     let tar = new Date(data)
+//     let ms = 1000 * 60 * 60 * 24
+//     let dif = tar - nows;
+//     return Math.round(dif / ms)
+// }
+// console.log(dniDoDaty('2024-12-25'))
 
 
 
@@ -1374,22 +1386,47 @@ console.log(dniDoDaty('2024-12-25'))
 
 
 
+
+
 // №5
 // Сделайте функцию, которая вернет массив всех високосных годов за предыдущие сто лет.
 
-
+// function vysokosniRoky() {
+//     const potokhnyyRik = new Date().getFullYear();
+//     const poperedni100 = Array.from({ length: 100 }, (_, i) => potokhnyyRik - i);
+//     return poperedni100.filter(chyVysokosnyy);
+// }
 
 
 // №6
 // Сделайте функцию, которая будет возвращать сколько дней осталось до конца текущего месяца.
 
 
+// function dniDoKincyaMisyacya() {
+// 	const now = new Date();
+// 	const enonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+// 	const perdy = 1000 * 60 * 60 * 24;
+// 	return Math.round((enonth - now) / perdy);
+// }
+// console.log(dniDoKincyaMisyacya());
+
 
 
 // №7
 // Сделайте функцию, которая вернет предыдущий, текущий и следующий дни недели словом в виде следующего объекта:
 
+// function dnyTyzhnya() {
+//     const dni = ['нд', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+//     const syogodni = new Date().getDay();
 
+//     return {
+//         prev: dni[(syogodni + 6) % 7],
+//         curr: dni[syogodni],
+//         next: dni[(syogodni + 1) % 7],
+//     };
+// }
+
+// console.log(dnyTyzhnya());
 
 
 // {
@@ -1397,3 +1434,206 @@ console.log(dniDoDaty('2024-12-25'))
 // 	curr: 'вс',
 // 	prev: 'сб',
 // }
+
+
+
+
+
+
+// 4.3
+
+
+
+
+
+// №1
+// Сделайте функцию, которая параметром будет принимать массив и удалять из него все дубли.
+// let phislo = [1, 1, 2, 3, 3, 3, 4, 5, 5]
+// function vydalytyDuble(masiv) {
+//     let rezultat = []
+
+//     for (let i = 0; i < masiv.length; i++) {
+//         if (!rezultat.includes(masiv[i])) {
+//             rezultat.push(masiv[i])
+//         }
+//     }
+//     return rezultat
+// }
+
+// console.log(vydalytyDuble(phislo))
+
+
+
+// №2
+// Сделайте функцию, которая параметром будет принимать массив и удалять из него все дубли, которые встречаются больше трех раз.
+// 
+
+// function vydalytyChastyiDuble(masiv) {
+//     const zustrichi = masiv.reduce((acc, num) => {
+//         acc[num] = (acc[num] || 0) + 1
+//         return acc
+//     }, {})
+
+//     return masiv.filter((num) => zustrichi[num] <= 3)
+// }
+
+// console.log(vydalytyChastyiDuble(phislo))
+
+
+
+// №3
+// Сделайте функцию, которая параметром будет принимать массив и удалять из него одинаковые, рядом стоящие элементы.
+// let chislo = [1, 1, 2, 3, 3, 3, 4, 5, 5]
+// function vydalytySosedniDuble(masiv) {
+//     return masiv.filter((y, i) => y !== masiv[i - 1]);
+// }
+
+// console.log(vydalytySosedniDuble(chislo))
+
+
+
+// №4
+// Сделайте функцию, которая параметром будет принимать массив с числами и возвращать максимальное и минимальное значение из этого массива в виде следующего объекта:
+
+// {
+// 	max: 9,
+// 	min: 1,
+// }
+
+// function maksimumIMinimum(masiv) {
+//     return {
+//         max: Math.max(...masiv),
+//         min: Math.min(...masiv),
+//     };
+// }
+
+// console.log(maksimumIMinimum(chislo))
+
+
+
+
+// 4.4
+
+
+
+
+// №1
+// Сделайте функцию, которая параметром будет принимать число, а возвращать количество его делителей.
+// function  delitelnaya (num){
+// 	let delcont = 0
+// 	for(i=1; i<=num;i++){
+// 		if(num%i==0){
+// 			delcont++
+// 		}
+// 	} 
+// 	return console.log("Число", num, 'має', delcont, "дільників");
+// }
+// console.log(delitelnaya(22));
+
+
+
+
+
+// №2
+// Сделайте функцию, которая параметром будет принимать дату, а возвращать знак зодиака, соответствующий этой дате.
+
+// function getZodiacSign(day, month) {
+//     const zodiacSigns = [
+//         { sign: "Козеріг", start: [12, 22], end: [1, 19] },
+//         { sign: "Водолій", start: [1, 20], end: [2, 18] },
+//         { sign: "Риби", start: [2, 19], end: [3, 20] },
+//         { sign: "Овен", start: [3, 21], end: [4, 19] },
+//         { sign: "Телець", start: [4, 20], end: [5, 20] },
+//         { sign: "Близнюки", start: [5, 21], end: [6, 20] },
+//         { sign: "Рак", start: [6, 21], end: [7, 22] },
+//         { sign: "Лев", start: [7, 23], end: [8, 22] },
+//         { sign: "Діва", start: [8, 23], end: [9, 22] },
+//         { sign: "Терези", start: [9, 23], end: [10, 22] },
+//         { sign: "Скорпіон", start: [10, 23], end: [11, 21] },
+//         { sign: "Стрілець", start: [11, 22], end: [12, 21] },
+//     ];
+
+//     for (const { sign, start, end } of zodiacSigns) {
+//         if (
+//             (month === start[0] && day >= start[1]) ||
+//             (month === end[0] && day <= end[1])
+//         ) {
+//             return sign;
+//         }
+//     }
+// }
+
+// console.log(getZodiacSign(23, 7))
+
+
+
+
+
+// №3
+// Сделайте функцию, которая параметром будет принимать число, а возвращать массив его делителей.
+
+// function  delitelnaya2 (num){
+// 	let delarr = []
+// 	for(let i=1; i<=num;i++){
+		
+// 		if(num%i===0){
+// 			delarr.push(i)
+// 		}
+// 	} 
+// 	return delarr
+// }
+
+// console.log(delitelnaya2(25));
+
+
+
+
+// №4
+// Сделайте функцию, которая параметром будет принимать число и проверять, простое оно или нет.
+// function prosto(num) {
+//     if (num <= 1) {
+// 		return false
+// 	}
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false
+//     }
+//     return true
+// }
+
+// console.log(prosto(7))
+
+
+
+
+// №5
+// Сделайте функцию, которая параметром будет принимать число и удалять из него четные цифры.
+
+// function nechet(num) {
+//     return Number(String(num).split('').filter(i => i % 2 !== 0).join(''))
+// }
+
+// console.log(nechet(123456))
+
+
+
+// №6
+// Сделайте функцию, которая заполнит массив N случайными числами из заданного промежутка.
+// function randomArray(N, min, max) {
+//     let arr = []
+//     for (let i = 0; i < N; i++) {
+//         arr.push(Math.floor(Math.random() * (max - min + 1)) + min)
+//     }
+//     return arr
+// }
+
+
+
+
+
+// 4.5
+
+
+
+
+
+
