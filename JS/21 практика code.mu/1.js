@@ -1,35 +1,30 @@
 //Дано некоторое число. Проверьте, что цифры этого числа расположены по возрастанию.
-// let num = 123
-// let string_arr = num.toString().split(''); 
-// let trufol = true
+let num = 123
+let string_arr = num.toString().split(''); 
+let trufol = true
 
-// string_arr.forEach((el, i, arr) => {
-//     if (i > 0 && arr[i - 1] > el) {
-//         trufol = false;
-//     }
-// });
+string_arr.forEach((el, i, arr) => {
+    if (i > 0 && arr[i - 1] > el) {
+        trufol = false;
+    }
+});
 
-// if (trufol == false){
-//     console.log(' цифри не по возростнню');
-// } else{
-//     console.log(' цифри  по возростнню');
-// }
-
-
-
+if (trufol == false){
+    console.log(' цифри не по возростнню');
+} else{
+    console.log(' цифри  по возростнню');
+}
 
 //  Дан массив:
-
 // [1, '', 2, 3, '', 5]
 // Удалите из массива все пустые строки.
 
-// let arr1 =  [1, '', 2, 3, '', 5]
-// let res1 = arr1.filter(i => i!="")
-// console.log(res1);
+let arr1 =  [1, '', 2, 3, '', 5]
+let res1 = arr1.filter(i => i!="")
+console.log(res1);
 
 
 // Дан массив:
-
 // [
 // 	[2, 1, 4, 3, 5],
 // 	[3, 5, 2, 4, 1],
@@ -37,15 +32,15 @@
 // ]
 // Отсортируйте элементы в каждом подмассиве.
 
-// arr2 = [
-// 	[2, 1, 4, 3, 5],
-// 	[3, 5, 2, 4, 1],
-// 	[4, 3, 1, 5, 2],
-// ]
-// res2 = arr2.forEach((i)=> {
-//     i.sort((a, b) => a - b);
-// })
-// console.log(res2);
+let arr2 = [
+	[2, 1, 4, 3, 5],
+	[3, 5, 2, 4, 1],
+	[4, 3, 1, 5, 2],
+]
+let res2 = arr2.forEach((i)=> {
+    i.sort((a, b) => a - b);
+})
+console.log(res2);
 
 // Даны два массива:
 
@@ -54,51 +49,34 @@
 // Удалите из большего массива лишние элементы с конца так, чтобы длины массивов стали одинаковыми.
 
 
-// let arr3_1 = [1, 2, 3];
-// let arr3_2 = [1, 2, 3, 4, 5];
+let arr3_1 = [1, 2, 3];
+let arr3_2 = [1, 2, 3, 4, 5];
 
-// let res3 = arr3_2.splice(0, arr3_1.length)
-// console.log(res3);
-
-
-
-
-
-
-
-// 3.2
-
-
-
-
-
+let res3 = arr3_2.splice(0, arr3_1.length)
+console.log(res3);
 
 // Выведите в консоль все числа в промежутке от 10 до 1000, у которых предпоследняя цифра четная.
 
-
-// for (let i = 10; i <= 1000; i++) {
-//     let noarr = i.toString().split('');
-//     let Last = noarr[noarr.length - 1] 
-//     if (Last != "0") {
-//         if(i%2==0){
-//             console.log(i);
-//         }
-//     }
-// }
-
-
-
+for (let i = 10; i <= 1000; i++) {
+    let noarr = i.toString().split('');
+    let Last = noarr[noarr.length - 1] 
+    if (Last != "0") {
+        if(i%2==0){
+            console.log(i);
+        }
+    }
+}
 
 // Дан массив. Удалите из него каждый пятый элемент.
 
-// let arrs = []
+let arrs = []
 
-// for(let i = 1; i<=30; i++){
-//     arrs.push(i)
-// }
-// console.log(arrs);
-// let arrss = arrs.filter(i => i% 5 != 0)
-// console.log(arrss);
+for(let i = 1; i<=30; i++){
+    arrs.push(i)
+}
+console.log(arrs);
+let arrss = arrs.filter(i => i% 5 != 0)
+console.log(arrss);
 
 
 
@@ -110,12 +88,12 @@
 // '00000'
 
 
-// let zeronum = 6
-// let zerores = 0
-// for (i=1; i<zeronum; i++){
-//     zerores += '0'
-// }
-// console.log(zerores);
+let zeronum = 6
+let zerores = 0
+for (i=1; i<zeronum; i++){
+    zerores += '0'
+}
+console.log(zerores);
 
 
 
@@ -128,12 +106,12 @@
 
 // 'aaa ccc fff'
 
-// let str = 'aaa bbb ccc eee fff'
+let str = 'aaa bbb ccc eee fff'
 
-// let strarr = str.split(' ')
-// let strfiltr = strarr.filter((_,i) => i % 2 == 0)
-// let strstr=strfiltr.join(" ")
-// console.log(strstr);
+let strarr = str.split(' ')
+let strfiltr = strarr.filter((_,i) => i % 2 == 0)
+let strstr=strfiltr.join(" ")
+console.log(strstr);
 
 
 
@@ -146,18 +124,18 @@
 // ]
 // Найдите сумму элементов этого массива.
 
-// const flatsum = [
-//     [1, 2, 3],
-//     [4, 5, 6],
-//     [7, 8, 9],
-// ]
+const flatsum = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+]
 
-// let resflat = flatsum.flat()
-// let count = 0
-// for(let i = 0; i<resflat.length; i++){
-//     count += resflat[i]
-// }
-// console.log(count);
+let resflat = flatsum.flat()
+let count = 0
+for(let i = 0; i<resflat.length; i++){
+    count += resflat[i]
+}
+console.log(count);
 
 
 
@@ -171,9 +149,9 @@
 
 // Дан массив со словами. Удалите из него слова, состоящие более чем из трех символов.
 
-// let str_len = ['qwer', 'qw', 'asdfgh', 'swe']
-// let sorts = str_len.filter((i) => i.length<=3)  
-// console.log(sorts);
+let str_len = ['qwer', 'qw', 'asdfgh', 'swe']
+let sorts = str_len.filter((i) => i.length<=3)  
+console.log(sorts);
 
 
 
@@ -188,18 +166,18 @@
 // Проверьте, что все цифры этого числа являются нечетными.
 
 
-// let mum = 21357
-// let set = true
-// let arsNum = mum.toString().split('').forEach((i) => {
-//     if(i%2==0){
-//         set = false
-//     } 
-// })
-// if(set == true){
-//     console.log('все цифры этого числа являются нечетными');
-// } else{
-//     console.log('не все цифры этого числа являются нечетными');
-// }
+let mum = 21357
+let set = true
+let arsNum = mum.toString().split('').forEach((i) => {
+    if(i%2==0){
+        set = false
+    } 
+})
+if(set == true){
+    console.log('все цифры этого числа являются нечетными');
+} else{
+    console.log('не все цифры этого числа являются нечетными');
+}
 
 
 
@@ -212,13 +190,13 @@
 // Проверьте, что это слово читается одинаково с любой стороны.
 
 
-// let read = 'abcba'
-// let rever = read.split('').reverse().join('')
-// if(read == rever){
-//     console.log('это слово читается одинаково с любой стороны.');
-// } else {
-//     console.log('это слово не читается одинаково с любой стороны.');
-// }
+let read = 'abcba'
+let rever = read.split('').reverse().join('')
+if(read == rever){
+    console.log('это слово читается одинаково с любой стороны.');
+} else {
+    console.log('это слово не читается одинаково с любой стороны.');
+}
 
 
 
@@ -249,33 +227,33 @@
 // Найдите сумму элементов этого массива.
 
 
-// let sumbigarr= 0
-// let big_arr =  [
-//     	[
-//     		[11, 12, 13],
-//     		[14, 15, 16],
-//     		[17, 17, 19],
-//     	],
-//     	[
-//     		[21, 22, 23],
-//     		[24, 25, 26],
-//     		[27, 27, 29],
-//     	],
-//     	[
-//     		[31, 32, 33],
-//     		[34, 35, 36],
-//     		[37, 37, 39],
-//     	],
-//     ]
+let sumbigarr= 0
+let big_arr =  [
+    	[
+    		[11, 12, 13],
+    		[14, 15, 16],
+    		[17, 17, 19],
+    	],
+    	[
+    		[21, 22, 23],
+    		[24, 25, 26],
+    		[27, 27, 29],
+    	],
+    	[
+    		[31, 32, 33],
+    		[34, 35, 36],
+    		[37, 37, 39],
+    	],
+    ]
 
-// big_arr.forEach((i) => {
-//     i.forEach((j)=>{
-//         j.forEach((k=>{
-//             sumbigarr += k
-//         }))
-//     })
-// })
-// console.log(sumbigarr);
+big_arr.forEach((i) => {
+    i.forEach((j)=>{
+        j.forEach((k=>{
+            sumbigarr += k
+        }))
+    })
+})
+console.log(sumbigarr);
 
 
 
@@ -294,13 +272,13 @@
 
 // Выведите в консоль все числа в промежутке от 10 до 1000, у которых первая цифра четная.
 
-//  for (let i = 10; i <= 1000; i++) {
-//         let noarr = i.toString().split('');
-//         let first = noarr[0] 
-//         if (first %2==0 ) {
-//                 console.log(i);
-//         }
-//     }
+ for (let i = 10; i <= 1000; i++) {
+        let noarr = i.toString().split('');
+        let first = noarr[0] 
+        if (first %2==0 ) {
+                console.log(i);
+        }
+    }
 
 
 
@@ -317,13 +295,13 @@
 
 // [2, 1, 4, 3, 6, 5]
 
-// let rev2 = [1, 2, 3, 4, 5, 6]
-// for (let i = 0; i < rev2.length; i += 2){
-//     let ar = rev2[i]
-//     rev2[i] = rev2[i + 1]
-//     rev2[i+1] = ar
-// }
-// console.log(rev2);
+let rev2 = [1, 2, 3, 4, 5, 6]
+for (let i = 0; i < rev2.length; i += 2){
+    let ar = rev2[i]
+    rev2[i] = rev2[i + 1]
+    rev2[i+1] = ar
+}
+console.log(rev2);
 
 
 
@@ -355,30 +333,30 @@
 
 
 
-// let objct = {
-// 	1: {
-// 		1: 11,
-// 		2: 12,
-// 		3: 13,
-// 	},
-// 	2: {
-// 		1: 21,
-// 		2: 22,
-// 		3: 23,
-// 	},
-// 	3: {
-// 		1: 24,
-// 		2: 25,
-// 		3: 26,
-// 	},
-// }
-// let ccoout = 0
-// for (let i in objct) {
-//     for (let j in objct[i]) {
-//         ccoout += objct[i][j];
-//     }
-// }
-// console.log(ccoout);
+let objct = {
+	1: {
+		1: 11,
+		2: 12,
+		3: 13,
+	},
+	2: {
+		1: 21,
+		2: 22,
+		3: 23,
+	},
+	3: {
+		1: 24,
+		2: 25,
+		3: 26,
+	},
+}
+let ccoout = 0
+for (let i in objct) {
+    for (let j in objct[i]) {
+        ccoout += objct[i][j];
+    }
+}
+console.log(ccoout);
 
 
 
@@ -403,17 +381,17 @@
 // Дан текст со словами. Запишите в массив все слова, начинающиеся на букву 'a'.
 
 
-// let text_a=[]
-// let text = 'qwera asddd gf aaasf aqw jhssah'
-// let artext = text.split(' ').forEach((i) => {
-// 	let letter = i.split('')
-// 		if(letter[0] == 'a'){
-// 			text_a.push(i)
-// 		}
+let text_a=[]
+let text = 'qwera asddd gf aaasf aqw jhssah'
+let artext = text.split(' ').forEach((i) => {
+	let letter = i.split('')
+		if(letter[0] == 'a'){
+			text_a.push(i)
+		}
 
-// })
+})
 
-// console.log(text_a);
+console.log(text_a);
 
 
 
@@ -430,13 +408,13 @@
 // Дан массив с числами. Оставьте в нем только те числа, которые делятся на 5.
 
 
-// let numbr = []
-// for (i=1; i<=50; i++){
-// 	if(i%5==0){
-// 		numbr.push(i)
-// 	}
-// } 
-// console.log(numbr);
+let numbr = []
+for (i=1; i<=50; i++){
+	if(i%5==0){
+		numbr.push(i)
+	}
+} 
+console.log(numbr);
 
 
 
@@ -453,16 +431,16 @@
 // Дан массив с числами. Оставьте в нем только те числа, которые содержат цифру ноль.
 
 
-// let numbro = []
-// for (i=0; i<=200; i++){
-// 		let strnum = i.toString().split('')
-// 		strnum.filter((j) => {
-// 			if(j == 0 ){
-// 				numbro.push(i)
-// 			}
-// 		})
-// } 
-// console.log(numbro);
+let numbro = []
+for (i=0; i<=200; i++){
+		let strnum = i.toString().split('')
+		strnum.filter((j) => {
+			if(j == 0 ){
+				numbro.push(i)
+			}
+		})
+} 
+console.log(numbro);
 
 
 
@@ -474,16 +452,16 @@
 
 
 
-// let numbrq = []
-// for (i=0; i<=50; i++){
-// 	let str = i.toString().split('')
-// 	str.filter((j)=>{
-// 		if(j == 3){
-// 			numbrq.push(i)
-// 		}
-// 	})
-// }
-// console.log(numbrq);
+let numbrq = []
+for (i=0; i<=50; i++){
+	let str = i.toString().split('')
+	str.filter((j)=>{
+		if(j == 3){
+			numbrq.push(i)
+		}
+	})
+}
+console.log(numbrq);
 
 
 
@@ -501,9 +479,9 @@
 
 // 12345
 
-// let q1 = 35142
-// let q2 = q1.toString().split('').sort().join('')
-// console.log(q2);
+let q1 = 35142
+let q2 = q1.toString().split('').sort().join('')
+console.log(q2);
 
 
 
@@ -523,18 +501,18 @@
 
 // '-1-2-3-4-5-'
 
-// let w1 = []
-// for(i=1; i<=5; i++){
-// 	w1.push(i)
-// }
-// let w2 = w1.join('-') 
-// let w3 = w2.split('')
-// w3.unshift('-')
-// w3.push('-')
-// let w4 = w3.join('')
+let w1 = []
+for(i=1; i<=5; i++){
+	w1.push(i)
+}
+let w2 = w1.join('-') 
+let w3 = w2.split('')
+w3.unshift('-')
+w3.push('-')
+let w4 = w3.join('')
 
 
-// console.log(w4);
+console.log(w4);
 
 
 
@@ -553,54 +531,54 @@
 
 // Найдите сумму элементов этого объекта.
 
-// let objk = {
-// 	1: {
-// 		1: {
-// 			1: 111,
-// 			2: 112,
-// 			3: 113,
-// 		},
-// 		2: {
-// 			1: 121,
-// 			2: 122,
-// 			3: 123,
-// 		},
-// 	},
-// 	2: {
-// 		1: {
-// 			1: 211,
-// 			2: 212,
-// 			3: 213,
-// 		},
-// 		2: {
-// 			1: 221,
-// 			2: 222,
-// 			3: 223,
-// 		},
-// 	},
-// 	3: {
-// 		1: {
-// 			1: 311,
-// 			2: 312,
-// 			3: 313,
-// 		},
-// 		2: {
-// 			1: 321,
-// 			2: 322,
-// 			3: 323,
-// 		},
-// 	},
-// }
+let objk = {
+	1: {
+		1: {
+			1: 111,
+			2: 112,
+			3: 113,
+		},
+		2: {
+			1: 121,
+			2: 122,
+			3: 123,
+		},
+	},
+	2: {
+		1: {
+			1: 211,
+			2: 212,
+			3: 213,
+		},
+		2: {
+			1: 221,
+			2: 222,
+			3: 223,
+		},
+	},
+	3: {
+		1: {
+			1: 311,
+			2: 312,
+			3: 313,
+		},
+		2: {
+			1: 321,
+			2: 322,
+			3: 323,
+		},
+	},
+}
 
-// let soun = 0
-// for (i in objk){
-// 	for(j in objk[i]){
-// 		for(k in objk[j]){
-// 			soun+=objk[i][j][k]
-// 		}
-// 	}
-// }
-// console.log(soun);
+let soun = 0
+for (i in objk){
+	for(j in objk[i]){
+		for(k in objk[j]){
+			soun+=objk[i][j][k]
+		}
+	}
+}
+console.log(soun);
 
 
 
@@ -624,12 +602,12 @@
 // Дан массив со числами. Удалите из него числа, состоящие более чем из трех цифр.
 
 
-// let bum = []
-// for (i=990; i<= 1120; i++){
-// 	bum.push(i)
-// }
-// let bumres= bum.toString().split(",").filter((i) => i.length <= 3 )
-// console.log(bumres);
+let bum = []
+for (i=990; i<= 1120; i++){
+	bum.push(i)
+}
+let bumres= bum.toString().split(",").filter((i) => i.length <= 3 )
+console.log(bumres);
 
 
 
@@ -641,18 +619,18 @@
 // let num = 12345;
 // Проверьте, что все цифры этого числа больше нуля.
 
-// let numg = 12345
-// let big0 = true
-// rjes = numg.toString().split("").forEach((i) => {
-// 	if (i <= 0) {
-// 		big0 = false
-// 	}
-// })
-// if(big0==true){
-// 	console.log("всі більше нуля");
-// } else {
-// 	console.log('не всі більше нуля');
-// }
+let numg = 12345
+let big0 = true
+rjes = numg.toString().split("").forEach((i) => {
+	if (i <= 0) {
+		big0 = false
+	}
+})
+if(big0==true){
+	console.log("всі більше нуля");
+} else {
+	console.log('не всі більше нуля');
+}
 
 
 
@@ -667,9 +645,9 @@
 
 // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-// let arsstrsort = [123, 456, 789]
-// let asd = arsstrsort.join('').split('').map(Number)
-// console.log(asd);
+let arsstrsort = [123, 456, 789]
+let asd = arsstrsort.join('').split('').map(Number)
+console.log(asd);
 
 
 
@@ -679,33 +657,33 @@
 
 // Дан следующая структура:
 
-// let data = [
-// 	{
-// 		1: 11,
-// 		2: 12,
-// 		3: 13,
-// 	},
-// 	{
-// 		1: 21,
-// 		2: 22,
-// 		3: 23,
-// 	},
-// 	{
-// 		1: 24,
-// 		2: 25,
-// 		3: 26,
-// 	},
-// ];
+let data = [
+	{
+		1: 11,
+		2: 12,
+		3: 13,
+	},
+	{
+		1: 21,
+		2: 22,
+		3: 23,
+	},
+	{
+		1: 24,
+		2: 25,
+		3: 26,
+	},
+];
 
 
 // Найдите сумму элементов этой структуры.
-// let ghj = 0
-// let pre = data.forEach((i)=> {
-// 	for( j in i){
-// 		ghj += i[j]
-// 	}
-// })
-// console.log(ghj);
+let ghj = 0
+let pre = data.forEach((i)=> {
+	for( j in i){
+		ghj += i[j]
+	}
+})
+console.log(ghj);
 
 
 
@@ -721,23 +699,23 @@
 
 //Дана строка со словами. Отсортируйте слова в алфавитном порядке.
 
-// let sortstr = 'Bsfk fvsr fkgkgk xcvb'
-// let arrstrsort = sortstr.split(' ').sort()
-// console.log(arrstrsort);
+let sortstr = 'Bsfk fvsr fkgkgk xcvb'
+let arrstrsort = sortstr.split(' ').sort()
+console.log(arrstrsort);
 
 
 
 
 
 // Дано число. Получите массив делителей этого числа.
-// let pn = 42
-// let pnres =[]
-// for(i=1; i<=pn; i++){
-// 	if(pn%i == 0){
-// 		pnres.push(i)
-// 	}
-// } 
-// console.log(pnres);
+let pn = 42
+let pnres =[]
+for(i=1; i<=pn; i++){
+	if(pn%i == 0){
+		pnres.push(i)
+	}
+} 
+console.log(pnres);
 
 
 
@@ -747,26 +725,26 @@
 
 //Даны два числа. Получите массив общих делителей этих чисел.
 
-// let numbre1 = 28
-// let numbre2 = 24
-// let conc = []
+let numbre1 = 28
+let numbre2 = 24
+let conc = []
 
-// if (numbre1 => numbre2) {
+if (numbre1 => numbre2) {
 
-// 	for (i = 1; i <= numbre1; i++) {
-// 		if (numbre1 % i == 0 && numbre2 % i == 0) {
-// 			conc.push(i)
-// 		}
-// 	}
-// 	console.log(conc);
-// } else {
-// 	for (i = 1; i <= numbre2; i++) {
-// 		if (numbre1 % i == 0 && numbre2 % i == 0) {
-// 			conc.push(i)
-// 		}
-// 	}
-// 	console.log(conc);
-// }
+	for (i = 1; i <= numbre1; i++) {
+		if (numbre1 % i == 0 && numbre2 % i == 0) {
+			conc.push(i)
+		}
+	}
+	console.log(conc);
+} else {
+	for (i = 1; i <= numbre2; i++) {
+		if (numbre1 % i == 0 && numbre2 % i == 0) {
+			conc.push(i)
+		}
+	}
+	console.log(conc);
+}
 
 
 
@@ -775,23 +753,23 @@
 
 
 //Дано число. Проверьте, что у этого числа есть только один делитель, кроме него самого и единицы.
-// let nqwe = 9; 
-// let count9 = 0; 
+let nqwe = 9; 
+let count9 = 0; 
 
-// for (let i = 2; i < nqwe; i++) {
-//   if (nqwe % i === 0) {
-//     count9++;
-//     if (count9 > 1) {
-//       break; 
-//     }
-//   }
-// }
+for (let i = 2; i < nqwe; i++) {
+  if (nqwe % i === 0) {
+    count9++;
+    if (count9 > 1) {
+      break; 
+    }
+  }
+}
 
-// if (count9 === 1) {
-//   console.log('у этого числа есть только один делитель, кроме него самого и единицы.'); 
-// } else {
-//   console.log('у этого числа есть не только один делитель, кроме него самого и единицы.'); 
-// }
+if (count9 === 1) {
+  console.log('у этого числа есть только один делитель, кроме него самого и единицы.'); 
+} else {
+  console.log('у этого числа есть не только один делитель, кроме него самого и единицы.'); 
+}
 
 
 
@@ -801,23 +779,23 @@
 
 //Через запятую написаны числа. Получите максимальное из этих чисел.
 
-// let jqwery= [4, 5, 6, 4]
-// let maxj = Math.max(...jqwery)
-// console.log(maxj);
+let jqwery= [4, 5, 6, 4]
+let maxj = Math.max(...jqwery)
+console.log(maxj);
 
 
 
 
 
 //Дан массив с числами. После каждого однозначного числа вставьте еще такое же.
-// let jqwery2 = [42, 5, 61, 4, 13];
-// for (let i = 0; i < jqwery2.length; i++){
-//     if (jqwery2[i].toString().length === 1) { 
-//         jqwery2.splice(i + 1, 0, jqwery2[i]);
-// 		i++;
-//     }
-// };
-// console.log(jqwery2);
+let jqwery2 = [42, 5, 61, 4, 13];
+for (let i = 0; i < jqwery2.length; i++){
+    if (jqwery2[i].toString().length === 1) { 
+        jqwery2.splice(i + 1, 0, jqwery2[i]);
+		i++;
+    }
+};
+console.log(jqwery2);
 
 
 
@@ -826,9 +804,9 @@
 
 //Дана строка. Удалите из нее все гласные буквы.
 
-// let str55 = "фацкапвіі ьлізе їхзщшло";
-// let resvbn = str55.replace(/[аеєиіїоуюя]/g, '');
-// console.log(resvbn);
+let str55 = "фацкапвіі ьлізе їхзщшло";
+let resvbn = str55.replace(/[аеєиіїоуюя]/g, '');
+console.log(resvbn);
 
 
 
@@ -837,14 +815,14 @@
 
 //Дана строка. Сделайте заглавной последнюю букву каждого слова в этой строке.
 
-// let str66 = "фацкапвіі ьлізе їхзщшло";
+let str66 = "фацкапвіі ьлізе їхзщшло";
 
-// let result47 = str66.split(' ').map(i => {
-//     let lsts = i[i.length - 1].toUpperCase(); 
-//     return i.slice(0, -1) + lsts; 
-// }).join(' ');
+let result47 = str66.split(' ').map(i => {
+    let lsts = i[i.length - 1].toUpperCase(); 
+    return i.slice(0, -1) + lsts; 
+}).join(' ');
 
-// console.log(result47);
+console.log(result47);
 
 
 
@@ -869,15 +847,15 @@
 // ];
 // Найдите сумму элементов этой структуры.
 
-// let ghj123 = 0
-// let pre123 = data3.forEach((i)=> {
-// 	for( j in i){
-// 		for(k of i[j]) {
-// 			ghj123 += k
-// 		}
-// 	}
-// })
-// console.log(ghj123);
+let ghj123 = 0
+let pre123 = data3.forEach((i)=> {
+	for( j in i){
+		for(k of i[j]) {
+			ghj123 += k
+		}
+	}
+})
+console.log(ghj123);
 
 
 
@@ -891,20 +869,20 @@
 // Дан массив со числами. Проверьте, что все числа из этого массива содержат в себе цифру 3.
 
 
-// let numg2 = [23, 13, 22]
-// let big3 = true
+let numg2 = [23, 13, 22]
+let big3 = true
 
-// for (i of numg2) {
-// 	let n3 = i.toString().split('')
-// 	if (n3[0] != 3 && n3[n3.length - 1] != 3) {
-// 		big3 = false;
-// 	}
-// }
-// if (big3 == true) {
-// 	console.log("всі мають 3");
-// } else {
-// 	console.log('не всі мають 3');
-// }
+for (i of numg2) {
+	let n3 = i.toString().split('')
+	if (n3[0] != 3 && n3[n3.length - 1] != 3) {
+		big3 = false;
+	}
+}
+if (big3 == true) {
+	console.log("всі мають 3");
+} else {
+	console.log('не всі мають 3');
+}
 
 
 // Дана строка в формате:
@@ -914,11 +892,11 @@
 
 // 'snake_case'
 
-// let keba = 'kebab-case';
+let keba = 'kebab-case';
 
 // Преобразуем kebab-case в snake_case
-// keba = keba.replace(/kebab-/g, 'snake_');
-// console.log(keba);
+keba = keba.replace(/kebab-/g, 'snake_');
+console.log(keba);
 
 
 
@@ -929,8 +907,8 @@
 
 // 'camelCase'
 
-// keba =  keba.replace(/snake_case/g, 'camelCase');
-// console.log(keba);
+keba =  keba.replace(/snake_case/g, 'camelCase');
+console.log(keba);
 
 // Дана строка в формате:
 
@@ -939,8 +917,8 @@
 
 // 'snake_case'
 
-// keba =  keba.replace(/camelCase/g, 'snake_case');
-// console.log(keba);
+keba =  keba.replace(/camelCase/g, 'snake_case');
+console.log(keba);
 
 
 
@@ -957,15 +935,15 @@
 // ]
 
 
-// let arrbig = []
-// for(i=1; i<=5; i++){
-// 	let arrbig2 = []
-// 	for(j=1;j<=3; j++){
-// 		arrbig2.push(j)
-// 	}
-// 	arrbig.push(arrbig2)
-// }
-// console.log(arrbig);
+let arrbig = []
+for(i=1; i<=5; i++){
+	let arrbig2 = []
+	for(j=1;j<=3; j++){
+		arrbig2.push(j)
+	}
+	arrbig.push(arrbig2)
+}
+console.log(arrbig);
 
 
 
@@ -982,22 +960,22 @@
 
 // Дана строка. Проверьте, что эта строка состоит только из цифр.
 
-// let nust2 = '2a4a681';
-// onlik =true
+let nust2 = '2a4a681';
+onlik =true
 
-// nust2.split('').forEach(i => {
-//     if (isNaN(Number(i))) {
-//         onlik = false;
-//     }
-// });
+nust2.split('').forEach(i => {
+    if (isNaN(Number(i))) {
+        onlik = false;
+    }
+});
 
-// if(onlik == true){
-// 	 console.log('log всі цифри');
+if(onlik == true){
+	 console.log('log всі цифри');
 
-// } else {
-// 	console.log('не всі тут цири');
+} else {
+	console.log('не всі тут цири');
 
-// }
+}
 
 
 
@@ -1007,8 +985,8 @@
 
 
 // Дана строка. Проверьте, что эта строка состоит только из четных цифр.
-// let nust = '123'
-// gsg = nust.map(Number)
+let nust = '123'
+gsg = nust.map(Number)
 
 
 
@@ -1016,35 +994,35 @@
 
 // Дан массив со числами. Удалите из него числа, имеющие два и более нуля.
 
-// let two0arr = [];
+let two0arr = [];
 
-// for (let i = 0; i <= 1000; i += 50) {
-//     two0arr.push(i);
-// }
-// let filteredArr = two0arr.filter(num => {
-//     let zeroCount = num.toString().split('').filter(j => j === '0').length;
-//     return zeroCount < 2;
-// });
+for (let i = 0; i <= 1000; i += 50) {
+    two0arr.push(i);
+}
+let filteredArr = two0arr.filter(num => {
+    let zeroCount = num.toString().split('').filter(j => j === '0').length;
+    return zeroCount < 2;
+});
 
-// console.log(filteredArr);
+console.log(filteredArr);
 
 
 
 
 
 // Найдите все числа от 1 до 1000, сумма цифр которых равна 13.
-// let arrsum1000 = []
-// let arrsum13 = []
-// for(i=0; i<=1000; i++){
-// 	arrsum1000.push(i)
-// }
-// for( i of arrsum1000){
-// 	let er = arrsum1000[i].toString().split('')
-// 	if(er[0]+er[er.length-1]==13){
-// 		arrsum13.push(i)
-// 	}
-// }
-// console.log(`числа сма цифр яких = 13: ${arrsum13}`);
+let arrsum1000 = []
+let arrsum13 = []
+for(i=0; i<=1000; i++){
+	arrsum1000.push(i)
+}
+for( i of arrsum1000){
+	let er = arrsum1000[i].toString().split('')
+	if(er[0]+er[er.length-1]==13){
+		arrsum13.push(i)
+	}
+}
+console.log(`числа сма цифр яких = 13: ${arrsum13}`);
 
 
 
@@ -1060,24 +1038,24 @@
 // ]
 
 
-// let order = []
-// let order1 = []
-// let order2 = []
-// let order3 = []
-// for (j = 1; j <= 9; j++) {
-// 	if (j <= 3) {
-// 		order1.push(j)
-// 	} else if (j > 3 && j <= 6) {
-// 		order2.push(j)
-// 	} else if (j > 6 && j <= 9) {
-// 		order3.push(j)
-// 	}
-// }
-// order.push(order1)
-// order.push(order2)
-// order.push(order3)
+let order = []
+let order1 = []
+let order2 = []
+let order3 = []
+for (j = 1; j <= 9; j++) {
+	if (j <= 3) {
+		order1.push(j)
+	} else if (j > 3 && j <= 6) {
+		order2.push(j)
+	} else if (j > 6 && j <= 9) {
+		order3.push(j)
+	}
+}
+order.push(order1)
+order.push(order2)
+order.push(order3)
 
-// console.log(order);
+console.log(order);
 
 
 
@@ -1095,9 +1073,9 @@
 // №1
 // Дан массив. Сделайте так, чтобы в нем каждый элемент повторился два раза.
 
-// let arr77 = [1, 2, 3, 4, 5]
-// let doubArr = arr77.flatMap(item => [item, item])
-// console.log(doubArr)
+let arr77 = [1, 2, 3, 4, 5]
+let doubArr = arr77.flatMap(item => [item, item])
+console.log(doubArr)
 
 
 
@@ -1110,15 +1088,15 @@
 
 // №2
 // // Дан массив и число. Оставьте в массиве только те числа, которые являются делителями заданного числа.
-// let delitel=[]
-// let zaddel = 3
-// for(i=1; i<100; i++){
-// 	delitel.push(i)
-// }
+let delitel=[]
+let zaddel = 3
+for(i=1; i<100; i++){
+	delitel.push(i)
+}
 
-// let itog = delitel.filter(i => i%zaddel == 0)
+let itog = delitel.filter(i => i%zaddel == 0)
 
-// console.log(itog);
+console.log(itog);
 
 
 
@@ -1130,12 +1108,10 @@
 
 // №3
 // Даны два числа. Получите массив цифр, которые есть и в одном, и во втором числе.
-// let num123 = 12345;
-// let num223 = 34567;
-
-// let como = Array.from(new Set(String(num123).split('')))
-//                         .filter(digit => String(num223).includes(digit));
-// console.log(como);
+let num123 = 12345;
+let num223 = 34567;
+let como = Array.from(new Set(String(num123).split(''))).filter(digit => String(num223).includes(digit));
+console.log(como);
 
 
 
@@ -1151,21 +1127,21 @@
 // №4
 // Дано число. Получите массив позицией всех цифр 3 в этом числе, за исключением первой и последней.
 
-// let chislo = 1233312333;
+let chislo5 = 1233312333;
 
-// let posiarey = [];
-// let strNum = String(chislo)
+let posiarey = [];
+let strNum = String(chislo5)
 
-// for (let i = 0; i < strNum.length; i++) {
-//     if (strNum[i] === '3') {
-//         posiarey.push(i)
-//     }
-// }
-// if (posiarey.length > 2) {
-//     posiarey = posiarey.slice(1, posiarey.length - 1)
-// }
+for (let i = 0; i < strNum.length; i++) {
+    if (strNum[i] === '3') {
+        posiarey.push(i)
+    }
+}
+if (posiarey.length > 2) {
+    posiarey = posiarey.slice(1, posiarey.length - 1)
+}
 
-// console.log(posiarey)
+console.log(posiarey)
 
 
 
@@ -1185,11 +1161,11 @@
 // Дан массив со числами. Оставьте в нем числа, состоящие из разных цифр, а остальные удалите.
 // let nus = [123, 112, 456, 788, 901, 303];
 
-// let FilsNum = nus.filter(num => {
-//     let resa = String(num).split('')
-//     return new Set(resa).size == resa.length
-// })
-// console.log(FilsNum)
+let FilsNum = nus.filter(num => {
+    let resa = String(num).split('')
+    return new Set(resa).size == resa.length
+})
+console.log(FilsNum)
 
 
 
@@ -1215,13 +1191,13 @@
 // 
 
 
-// let miniarr = [
-//     [1, 2, 3],
-//     [4, 5, 6],
-//     [7, 8, 9],
-// ];
-// let flatmini = array.flat();
-// console.log(flatArray)
+let miniarr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+];
+let flatmini = array.flat();
+console.log(flatArray)
 
 
 
@@ -1233,49 +1209,49 @@
 
 // №1
 // Сделайте функцию, которая вернет текущий день недели словом.
-// function getDays() {
-//     const days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота', 'Неділя'];
-//     const today = new Date().getDay();
-//     return days[today-1];
-// }
+function getDays() {
+    const days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота', 'Неділя'];
+    const today = new Date().getDay();
+    return days[today-1];
+}
 
-// console.log(getDays()); 
+console.log(getDays()); 
 
 // №2
 // Сделайте функцию, которая параметром будет получать дату, а возвращать день недели словом, соответствующий этой дате.
-// function getDays(date) {
-//     const days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота', 'Неділя']
-//     const ind = new Date(date).getDay()
-//     return days[ind-1]
-// }
+function getDays(date) {
+    const days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота', 'Неділя']
+    const ind = new Date(date).getDay()
+    return days[ind-1]
+}
 
-// console.log(getDays('2023-12-25'))
+console.log(getDays('2023-12-25'))
 
 
 
 // №3
 // Сделайте функцию, которая параметром будет принимать секунды, а возвращать количество суток, соответствующих этим секундам.
-// function secday(sec) {
-//     return sec / (60 * 60 * 24)
-// }
-// console.log(secday(86400))
+function secday(sec) {
+    return sec / (60 * 60 * 24)
+}
+console.log(secday(86400))
 
 
 
 // №4
 // Сделайте функцию, которая параметром будет принимать число и строку и обрезать эту строку до длины, заданной первым параметром.
 
-// function vkorotytyRyadok(dovzhyna, tekst) {
-//     let rezultat = ''
+function vkorotytyRyadok(dovzhyna, tekst) {
+    let rezultat = ''
 
-//     for (let i = 0; i < dovzhyna && i < tekst.length; i++) {
-//         rezultat += tekst[i]
-//     }
+    for (let i = 0; i < dovzhyna && i < tekst.length; i++) {
+        rezultat += tekst[i]
+    }
 
 
-//     return rezultat
-// }
-// console.log(vkorotytyRyadok(5, "Привіт, Світлана!"))
+    return rezultat
+}
+console.log(vkorotytyRyadok(5, "Привіт, Світлана!"))
 
 
 
@@ -1283,53 +1259,53 @@
 // №5
 // Сделайте функцию, которая параметром будет получать дату, а возвращать знак зодиака, соответствующий этой дате.
 
-// function znakZodiaku(data) {
-//     const zodiaky = [
-//         { znak: 'Козеріг', poch: '12-22', kin: '01-19' },
-//         { znak: 'Водолій', poch: '01-20', kin: '02-18' },
-//         { znak: 'Риби', poch: '02-19', kin: '03-20' },
-//         { znak: 'Овен', poch: '03-21', kin: '04-19' },
-//         { znak: 'Телець', poch: '04-20', kin: '05-20' },
-//         { znak: 'Близнюки', poch: '05-21', kin: '06-20' },
-//         { znak: 'Рак', poch: '06-21', kin: '07-22' },
-//         { znak: 'Лев', poch: '07-23', kin: '08-22' },
-//         { znak: 'Діва', poch: '08-23', kin: '09-22' },
-//         { znak: 'Терези', poch: '09-23', kin: '10-22' },
-//         { znak: 'Скорпіон', poch: '10-23', kin: '11-21' },
-//         { znak: 'Стрілець', poch: '11-22', kin: '12-21' }
-//     ];
+function znakZodiaku(data) {
+    const zodiaky = [
+        { znak: 'Козеріг', poch: '12-22', kin: '01-19' },
+        { znak: 'Водолій', poch: '01-20', kin: '02-18' },
+        { znak: 'Риби', poch: '02-19', kin: '03-20' },
+        { znak: 'Овен', poch: '03-21', kin: '04-19' },
+        { znak: 'Телець', poch: '04-20', kin: '05-20' },
+        { znak: 'Близнюки', poch: '05-21', kin: '06-20' },
+        { znak: 'Рак', poch: '06-21', kin: '07-22' },
+        { znak: 'Лев', poch: '07-23', kin: '08-22' },
+        { znak: 'Діва', poch: '08-23', kin: '09-22' },
+        { znak: 'Терези', poch: '09-23', kin: '10-22' },
+        { znak: 'Скорпіон', poch: '10-23', kin: '11-21' },
+        { znak: 'Стрілець', poch: '11-22', kin: '12-21' }
+    ];
 
-//     const dataVvedena = new Date(data)
-//     const misyac = String(dataVvedena.getMonth() + 1).padStart(2, '0')
-//     const den = String(dataVvedena.getDate()).padStart(2, '0')
-//     const formatData = `${misyac}-${den}`
+    const dataVvedena = new Date(data)
+    const misyac = String(dataVvedena.getMonth() + 1).padStart(2, '0')
+    const den = String(dataVvedena.getDate()).padStart(2, '0')
+    const formatData = `${misyac}-${den}`
 
-//     for (let i = 0; i < zodiaky.length; i++) {
-//         const { znak, poch, kin } = zodiaky[i]
-//         if ((formatData >= poch && formatData <= '12-31') ||  (formatData >= '01-01' && formatData <= kin)) {
-//             return znak
-//         }
-//     }
-// }
+    for (let i = 0; i < zodiaky.length; i++) {
+        const { znak, poch, kin } = zodiaky[i]
+        if ((formatData >= poch && formatData <= '12-31') ||  (formatData >= '01-01' && formatData <= kin)) {
+            return znak
+        }
+    }
+}
 
-// console.log(znakZodiaku('2023-10-01'))
+console.log(znakZodiaku('2023-10-01'))
 
 
 
 // №6
 // Сделайте функцию, которая параметром будет принимать число, а возвращать сумму его делителей.
 
-// function sumaDilnykiv(chyslo) {
-//     let suma = 0
-//     for (let i = 1; i <= chyslo; i++) {
-//         if (chyslo % i === 0) {
-//             suma += i
-//         }
-//     }
-//     return suma
-// }
+function sumaDilnykiv(chyslo) {
+    let suma = 0
+    for (let i = 1; i <= chyslo; i++) {
+        if (chyslo % i === 0) {
+            suma += i
+        }
+    }
+    return suma
+}
 
-// console.log(sumaDilnykiv(12))
+console.log(sumaDilnykiv(12))
 
 
 
@@ -1343,97 +1319,80 @@
 // №1
 // Сделайте функцию, которая параметром будет принимать число и возвращать сумму его цифр.
 
-// function sumaCyfr(chyslo) {
-//     let suma = 0
+function sumaCyfr(chyslo) {
+    let suma = 0
 
-//     while (chyslo > 0) {
-//         suma += chyslo % 10
-//         chyslo = Math.floor(chyslo / 10)
-//     }
+    while (chyslo > 0) {
+        suma += chyslo % 10
+        chyslo = Math.floor(chyslo / 10)
+    }
 
-//     return suma
-// }
+    return suma
+}
 
-// console.log(sumaCyfr(123))
-// console.log(sumaCyfr(4567))
+console.log(sumaCyfr(123))
+console.log(sumaCyfr(4567))
 
 // №2
 // Сделайте функцию, которая параметром будет принимать число и удалять из него нули.
 
-// function vydalytyNuli(chyslo) {
-//     return Number(String(chyslo).replace(/0/g, ''));
-// }
-// console.log(vydalytyNuli(102030)); 
+function vydalytyNuli(chyslo) {
+    return Number(String(chyslo).replace(/0/g, ''));
+}
+console.log(vydalytyNuli(102030)); 
 
 // №3
 // Сделайте функцию, которая будет возвращать сколько дней прошло или осталось до заданной даты в году, в зависимости от того, была уже эта дата или нет.
-// function dniDoDaty(data) {
-//     let nows = new Date()
-//     let tar = new Date(data)
-//     let ms = 1000 * 60 * 60 * 24
-//     let dif = tar - nows;
-//     return Math.round(dif / ms)
-// }
-// console.log(dniDoDaty('2024-12-25'))
+function dniDoDaty(data) {
+    let nows = new Date()
+    let tar = new Date(data)
+    let ms = 1000 * 60 * 60 * 24
+    let dif = tar - nows;
+    return Math.round(dif / ms)
+}
+console.log(dniDoDaty('2024-12-25'))
 
 
-
-
-
-// №4
-// Сделайте функцию, которая параметром будет принимать год и проверять, високосный он или нет.
-
-
-
-
-
-
-// №5
 // Сделайте функцию, которая вернет массив всех високосных годов за предыдущие сто лет.
 
-// function vysokosniRoky() {
-//     const potokhnyyRik = new Date().getFullYear();
-//     const poperedni100 = Array.from({ length: 100 }, (_, i) => potokhnyyRik - i);
-//     return poperedni100.filter(chyVysokosnyy);
-// }
+function vysokosniRoky() {
+    const potokhnyyRik = new Date().getFullYear();
+    const poperedni100 = Array.from({ length: 100 }, (_, i) => potokhnyyRik - i);
+    return poperedni100.filter(chyVysokosnyy);
+}
 
 
-// №6
+
 // Сделайте функцию, которая будет возвращать сколько дней осталось до конца текущего месяца.
 
 
-// function dniDoKincyaMisyacya() {
-// 	const now = new Date();
-// 	const enonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-// 	const perdy = 1000 * 60 * 60 * 24;
-// 	return Math.round((enonth - now) / perdy);
-// }
-// console.log(dniDoKincyaMisyacya());
+function dniDoKincyaMisyacya() {
+	const now = new Date();
+	const enonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+	const perdy = 1000 * 60 * 60 * 24;
+	return Math.round((enonth - now) / perdy);
+}
+console.log(dniDoKincyaMisyacya());
 
 
 
-// №7
+
 // Сделайте функцию, которая вернет предыдущий, текущий и следующий дни недели словом в виде следующего объекта:
 
-// function dnyTyzhnya() {
-//     const dni = ['нд', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
-//     const syogodni = new Date().getDay();
+function dnyTyzhnya() {
+    const dni = ['нд', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+    const syogodni = new Date().getDay();
 
-//     return {
-//         prev: dni[(syogodni + 6) % 7],
-//         curr: dni[syogodni],
-//         next: dni[(syogodni + 1) % 7],
-//     };
-// }
+    return {
+        prev: dni[(syogodni + 6) % 7],
+        curr: dni[syogodni],
+        next: dni[(syogodni + 1) % 7],
+    };
+}
 
-// console.log(dnyTyzhnya());
+console.log(dnyTyzhnya());
 
 
-// {
-// 	next: 'пн',
-// 	curr: 'вс',
-// 	prev: 'сб',
-// }
 
 
 
@@ -1448,19 +1407,19 @@
 
 // №1
 // Сделайте функцию, которая параметром будет принимать массив и удалять из него все дубли.
-// let phislo = [1, 1, 2, 3, 3, 3, 4, 5, 5]
-// function vydalytyDuble(masiv) {
-//     let rezultat = []
+let phislo = [1, 1, 2, 3, 3, 3, 4, 5, 5]
+function vydalytyDuble(masiv) {
+    let rezultat = []
 
-//     for (let i = 0; i < masiv.length; i++) {
-//         if (!rezultat.includes(masiv[i])) {
-//             rezultat.push(masiv[i])
-//         }
-//     }
-//     return rezultat
-// }
+    for (let i = 0; i < masiv.length; i++) {
+        if (!rezultat.includes(masiv[i])) {
+            rezultat.push(masiv[i])
+        }
+    }
+    return rezultat
+}
 
-// console.log(vydalytyDuble(phislo))
+console.log(vydalytyDuble(phislo))
 
 
 
@@ -1468,27 +1427,27 @@
 // Сделайте функцию, которая параметром будет принимать массив и удалять из него все дубли, которые встречаются больше трех раз.
 // 
 
-// function vydalytyChastyiDuble(masiv) {
-//     const zustrichi = masiv.reduce((acc, num) => {
-//         acc[num] = (acc[num] || 0) + 1
-//         return acc
-//     }, {})
+function vydalytyChastyiDuble(masiv) {
+    const zustrichi = masiv.reduce((acc, num) => {
+        acc[num] = (acc[num] || 0) + 1
+        return acc
+    }, {})
 
-//     return masiv.filter((num) => zustrichi[num] <= 3)
-// }
+    return masiv.filter((num) => zustrichi[num] <= 3)
+}
 
-// console.log(vydalytyChastyiDuble(phislo))
+console.log(vydalytyChastyiDuble(phislo))
 
 
 
 // №3
 // Сделайте функцию, которая параметром будет принимать массив и удалять из него одинаковые, рядом стоящие элементы.
-// let chislo = [1, 1, 2, 3, 3, 3, 4, 5, 5]
-// function vydalytySosedniDuble(masiv) {
-//     return masiv.filter((y, i) => y !== masiv[i - 1]);
-// }
+let chislo = [1, 1, 2, 3, 3, 3, 4, 5, 5]
+function vydalytySosedniDuble(masiv) {
+    return masiv.filter((y, i) => y !== masiv[i - 1]);
+}
 
-// console.log(vydalytySosedniDuble(chislo))
+console.log(vydalytySosedniDuble(chislo))
 
 
 
@@ -1500,14 +1459,14 @@
 // 	min: 1,
 // }
 
-// function maksimumIMinimum(masiv) {
-//     return {
-//         max: Math.max(...masiv),
-//         min: Math.min(...masiv),
-//     };
-// }
+function maksimumIMinimum(masiv) {
+    return {
+        max: Math.max(...masiv),
+        min: Math.min(...masiv),
+    };
+}
 
-// console.log(maksimumIMinimum(chislo))
+console.log(maksimumIMinimum(chislo))
 
 
 
@@ -1519,16 +1478,16 @@
 
 // №1
 // Сделайте функцию, которая параметром будет принимать число, а возвращать количество его делителей.
-// function  delitelnaya (num){
-// 	let delcont = 0
-// 	for(i=1; i<=num;i++){
-// 		if(num%i==0){
-// 			delcont++
-// 		}
-// 	} 
-// 	return console.log("Число", num, 'має', delcont, "дільників");
-// }
-// console.log(delitelnaya(22));
+function  delitelnaya (num){
+	let delcont = 0
+	for(i=1; i<=num;i++){
+		if(num%i==0){
+			delcont++
+		}
+	} 
+	return console.log("Число", num, 'має', delcont, "дільників");
+}
+console.log(delitelnaya(22));
 
 
 
@@ -1537,33 +1496,33 @@
 // №2
 // Сделайте функцию, которая параметром будет принимать дату, а возвращать знак зодиака, соответствующий этой дате.
 
-// function getZodiacSign(day, month) {
-//     const zodiacSigns = [
-//         { sign: "Козеріг", start: [12, 22], end: [1, 19] },
-//         { sign: "Водолій", start: [1, 20], end: [2, 18] },
-//         { sign: "Риби", start: [2, 19], end: [3, 20] },
-//         { sign: "Овен", start: [3, 21], end: [4, 19] },
-//         { sign: "Телець", start: [4, 20], end: [5, 20] },
-//         { sign: "Близнюки", start: [5, 21], end: [6, 20] },
-//         { sign: "Рак", start: [6, 21], end: [7, 22] },
-//         { sign: "Лев", start: [7, 23], end: [8, 22] },
-//         { sign: "Діва", start: [8, 23], end: [9, 22] },
-//         { sign: "Терези", start: [9, 23], end: [10, 22] },
-//         { sign: "Скорпіон", start: [10, 23], end: [11, 21] },
-//         { sign: "Стрілець", start: [11, 22], end: [12, 21] },
-//     ];
+function getZodiacSign(day, month) {
+    const zodiacSigns = [
+        { sign: "Козеріг", start: [12, 22], end: [1, 19] },
+        { sign: "Водолій", start: [1, 20], end: [2, 18] },
+        { sign: "Риби", start: [2, 19], end: [3, 20] },
+        { sign: "Овен", start: [3, 21], end: [4, 19] },
+        { sign: "Телець", start: [4, 20], end: [5, 20] },
+        { sign: "Близнюки", start: [5, 21], end: [6, 20] },
+        { sign: "Рак", start: [6, 21], end: [7, 22] },
+        { sign: "Лев", start: [7, 23], end: [8, 22] },
+        { sign: "Діва", start: [8, 23], end: [9, 22] },
+        { sign: "Терези", start: [9, 23], end: [10, 22] },
+        { sign: "Скорпіон", start: [10, 23], end: [11, 21] },
+        { sign: "Стрілець", start: [11, 22], end: [12, 21] },
+    ];
 
-//     for (const { sign, start, end } of zodiacSigns) {
-//         if (
-//             (month === start[0] && day >= start[1]) ||
-//             (month === end[0] && day <= end[1])
-//         ) {
-//             return sign;
-//         }
-//     }
-// }
+    for (const { sign, start, end } of zodiacSigns) {
+        if (
+            (month === start[0] && day >= start[1]) ||
+            (month === end[0] && day <= end[1])
+        ) {
+            return sign;
+        }
+    }
+}
 
-// console.log(getZodiacSign(23, 7))
+console.log(getZodiacSign(23, 7))
 
 
 
@@ -1572,35 +1531,35 @@
 // №3
 // Сделайте функцию, которая параметром будет принимать число, а возвращать массив его делителей.
 
-// function  delitelnaya2 (num){
-// 	let delarr = []
-// 	for(let i=1; i<=num;i++){
-		
-// 		if(num%i===0){
-// 			delarr.push(i)
-// 		}
-// 	} 
-// 	return delarr
-// }
+function  delitelnaya2 (num){
+	let delarr = []
+	for(let i=1; i<=num;i++){
 
-// console.log(delitelnaya2(25));
+		if(num%i===0){
+			delarr.push(i)
+		}
+	} 
+	return delarr
+}
+
+console.log(delitelnaya2(25));
 
 
 
 
 // №4
 // Сделайте функцию, которая параметром будет принимать число и проверять, простое оно или нет.
-// function prosto(num) {
-//     if (num <= 1) {
-// 		return false
-// 	}
-//     for (let i = 2; i <= Math.sqrt(num); i++) {
-//         if (num % i === 0) return false
-//     }
-//     return true
-// }
+function prosto(num) {
+    if (num <= 1) {
+		return false
+	}
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false
+    }
+    return true
+}
 
-// console.log(prosto(7))
+console.log(prosto(7))
 
 
 
@@ -1608,23 +1567,23 @@
 // №5
 // Сделайте функцию, которая параметром будет принимать число и удалять из него четные цифры.
 
-// function nechet(num) {
-//     return Number(String(num).split('').filter(i => i % 2 !== 0).join(''))
-// }
+function nechet(num) {
+    return Number(String(num).split('').filter(i => i % 2 !== 0).join(''))
+}
 
-// console.log(nechet(123456))
+console.log(nechet(123456))
 
 
 
 // №6
 // Сделайте функцию, которая заполнит массив N случайными числами из заданного промежутка.
-// function randomArray(N, min, max) {
-//     let arr = []
-//     for (let i = 0; i < N; i++) {
-//         arr.push(Math.floor(Math.random() * (max - min + 1)) + min)
-//     }
-//     return arr
-// }
+function randomArray(N, min, max) {
+    let arr = []
+    for (let i = 0; i < N; i++) {
+        arr.push(Math.floor(Math.random() * (max - min + 1)) + min)
+    }
+    return arr
+}
 
 
 
@@ -1637,3 +1596,442 @@
 
 
 
+// №1
+// Дана переменная со строкой. Проверьте, что в эта строка представляет собой число, то есть состоит только из цифр.
+function Chyslo(str) {
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] < '0' || str[i] > '9') {
+            return false
+        }
+    }
+    return true
+}
+
+console.log(Chyslo("12345"))
+
+
+
+// №2
+// Дана переменная со строкой. Проверьте, что в эта строка представляет собой дробь.
+function Drob(str) {
+    let tochka = false;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '.') {
+            if (tochka) return false
+            tochka = true
+        } else if (str[i] < '0' || str[i] > '9') {
+            return false
+        }
+    }
+    return tochka
+}
+
+console.log(Drob("12.54"))
+
+
+
+// №3
+// Сделайте функцию, которая параметром будет принимать массив с числами и возвращать второе по величине число.
+
+function druheZaVelychynoiu(chysla) {
+
+    let max = chysla[0]
+    let secondMax = chysla[0]
+
+    for (let i = 1; i < chysla.length; i++) {
+        if (chysla[i] > max) {
+            secondMax = max
+            max = chysla[i]
+        } else if (chysla[i] > secondMax && chysla[i] !== max) {
+            secondMax = chysla[i]
+        }
+    }
+
+	return secondMax 
+}
+console.log(druheZaVelychynoiu([10, 20, 20, 30, 40]))
+
+
+
+// №4
+// Сделайте функцию, которая параметрами будет принимать два числа и возвращать массив, заполненный целыми числами от минимального параметра до максимального.
+
+function masyvVidDo(min, max) {
+	let result = []
+	for (let i = min; i <= max; i++) {
+		result.push(i)
+	}
+	return result
+}
+
+console.log(masyvVidDo(3, 7))
+
+
+
+
+// №5
+// Сделайте функцию, которая заполнит массив случайными латинскими буквами.
+
+function masyvVypadkovykhLyt(N) {
+    let result = []
+    let letters = 'tfjgkkkkkkkkkkkkkkkk'
+    for (let i = 0; i < N; i++) {
+        let randomIndex = Math.floor(Math.random() * letters.length)
+        result.push(letters[randomIndex])
+    }
+    return result
+}
+
+console.log(masyvVypadkovykhLyt(5))
+
+
+// №6
+// Сделайте функцию, которая будет возвращать сумму N первых чисел Фибоначчи.
+
+function masyvVypadkovykhLyt(N) {
+	let res = []
+	let lett = 'dsgxfhcokm'
+	for (let i = 0; i < N; i++) {
+		let ran = Math.floor(Math.random() * lett.length);
+		res.push(lett[ran])
+	}
+	return res
+}
+console.log(masyvVypadkovykhLyt(5))
+function sumaFib(N) {
+	if (N <= 0) {
+		return 0
+	}
+	let prev = 0
+	let curr = 1
+	let sum = 1
+
+	if (N === 1) {
+		return prev
+	}
+	if (N === 2) {
+		return sum
+	}
+
+	for (let i = 3; i <= N; i++) {
+		let next = prev + curr
+		sum += next
+		prev = curr
+		curr = next
+	}
+	return sum
+}
+
+console.log(sumaFib(5))
+
+
+
+
+
+
+
+
+// 4.6
+
+
+
+
+
+// №1
+// Сделайте функцию, которая параметром будет принимать дату в формате год-месяц-день, и определять, существует ли такая дата или нет.
+
+function dataIsnuie(data) {
+	const [rik, mis, den] = data.split('-').map(Number)
+	const dataObj = new Date(rik, mis - 1, den)
+	return dataObj.getFullYear() === rik && dataObj.getMonth() === mis - 1 && dataObj.getDate() === den
+}
+
+
+console.log(dataIsnuie("2023-12-12"))
+
+
+
+
+
+
+
+
+// №2
+// Сделайте функцию, которая сгенерирует строку заданной длины, заполненную случайными латинскими буквами.
+function strokaVypadkovykhLyt(dovzhyna) {
+	const litery = 'yikiutjyrthergewq'
+	let result = ''
+	for (let i = 0; i < dovzhyna; i++) {
+		const randomIndex = Math.floor(Math.random() * litery.length)
+		result += litery[randomIndex]
+	}
+	return result
+}
+
+console.log(strokaVypadkovykhLyt(10))
+
+
+
+
+
+
+
+// №3
+// Сделайте функцию, которая параметром будет получать строку со словами, а возвращать строку в верхнем регистре, состоящую из первых букв слов.
+function pershiLiteryVelyki(str) {
+    const slova = str.split(' ')
+    let rezultat = ''
+    for (let i = 0; i < slova.length; i++) {
+        if (slova[i].length > 0) {
+            rezultat += slova[i][0].toUpperCase()
+        }
+    }
+    return rezultat
+}
+
+console.log(pershiLiteryVelyki("hello world from javascript"))
+
+
+
+
+
+
+
+// №4
+// Сделайте функцию, которая параметром будет принимать массив с числами и заменять каждое число на массив его делителей.
+
+function zaminytyNaDilyteliv(masyv) {
+    function dilyteli(chyslo) {
+        let dilyteliMas = []
+        for (let i = 1; i <= chyslo; i++) {
+            if (chyslo % i === 0) {
+                dilyteliMas.push(i)
+            }
+        }
+        return dilyteliMas
+    }
+
+    let rezultat = [];
+    for (let i = 0; i < masyv.length; i++) {
+        rezultat.push(dilyteli(masyv[i]))
+    }
+    return rezultat
+}
+
+console.log(zaminytyNaDilyteliv([6, 15, 28])); 
+
+
+
+
+
+
+
+
+// №5
+// Сделайте функцию, которая параметром будет принимать секунды, а возвращать количество дней, часов, минут и секунд, соответствующих этим секундам, в виде следующего объекта:
+
+// {
+// 	d: 12,
+// 	h: 10,
+// 	m: 59,
+// 	s: 59,
+// }
+function rozpodilSekund(sekundy) {
+	const d = Math.floor(sekundy / (24 * 3600))
+	sekundy %= 24 * 3600
+	const h = Math.floor(sekundy / 3600)
+	sekundy %= 3600
+	const m = Math.floor(sekundy / 60)
+	const s = sekundy % 60
+
+	return {
+		d,
+		h,
+		m,
+		s
+	}
+}
+
+
+console.log(rozpodilSekund(1000000));
+
+
+
+
+// 4.7
+
+
+
+
+// №1
+// Сделайте функцию, которая параметром будет принимать текст со словами, а возвращать текст, в котором эти слова будут отсортированы в алфавитном порядке.
+// №2
+// Сделайте функцию, которая параметром будет принимать два массива и возвращать массив их общих элементов.
+
+function spilniElementy(masyv1, masyv2) {
+    let rezultat = []
+    for (let i = 0; i < masyv1.length; i++) {
+        if (masyv2.includes(masyv1[i]) && !rezultat.includes(masyv1[i])) {
+            rezultat.push(masyv1[i])
+        }
+    }
+    return rezultat;
+}
+
+console.log(spilniElementy([1, 2, 3], [2, 3, 4]))
+
+
+
+
+// №3
+// Сделайте функцию, которая будет возвращать случайное число. Функция не должна возвращать одно и тоже число два раза подряд.
+
+function vypadkoveChysloBezPovtorennya() {
+    let poperednie 
+
+    return function() {
+        let randomChyslo
+        do {
+            randomChyslo = Math.floor(Math.random() * 100); // Генеруємо випадкове число (0-99)
+        } while (randomChyslo === poperednie);
+        poperednie = randomChyslo
+        return randomChyslo
+    };
+}
+
+
+
+
+
+
+// №4
+// Сделайте функцию, которая параметром будет принимать массив и элемент и возвращать следующий за ним элемент. Смотрите пример:
+// let arr = [1, 2, 3, 4, 5];
+// func(arr, 1); // 2
+// func(arr, 4); // 5
+// func(arr, 5); // 1
+
+
+function nastupnyiElement(masyv, element) {
+    let index = masyv.indexOf(element)
+    if (index === -1){
+		return null	
+	} 
+    return masyv[(index + 1) % masyv.length]
+}
+let arr = [1, 2, 3, 4, 5]
+
+
+
+
+
+// №1
+// Сделайте функцию, которая параметром будет принимать букву и проверять, это буква кириллицы или латиницы.
+function vypadkovyiElement(masyv) {
+	function typLitary(bukva) {
+		let kyrilytsia = "абвгґдежзийіїклмнопрстуфхцчшщьюяє"
+		let  latynytsia = "abcdefghijklmnopqrstuvwxyz"
+	
+		if (kyrilytsia.test(bukva)) {
+			return "Кирилиця"
+		} else if (latynytsia.test(bukva)) {
+			return "Латиниця"
+		} else {
+			return "Не буква"
+		}
+	}
+	
+	console.log(typLitary("а"))
+
+	
+
+
+
+// №2
+// Сделайте функцию, которая параметром будет принимать массив и перемешивать элементы этого массива в случайном порядке.
+function nVypadkovykhElementiv(masyv, n) {
+	function peremishatyMasyv(masyv) {
+		for (let i = masyv.length - 1; i > 0; i--) {
+			const randomIndex = Math.floor(Math.random() * (i + 1))
+			[masyv[i], masyv[randomIndex]] = [masyv[randomIndex], masyv[i]]
+		}
+		return masyv
+	}
+	
+
+	console.log(peremishatyMasyv([1, 2, 3, 4, 5]))
+	
+
+
+// №3
+// Дан текст со словами. Запишите все слова этого текста в специальный объект. Ключами в этом объекте будут буквы, а значениями - массивы слов, начинающихся на эти буквы.
+
+function slovaZaLytaramy(text) {
+    const slova = text.split(" "); 
+    let obiekt = {};
+
+    for (const slovo of slova) {
+        const pershaBukva = slovo[0].toLowerCase()
+        if (!obiekt[pershaBukva]) {
+            obiekt[pershaBukva] = []
+        }
+        obiekt[pershaBukva].push(slovo)
+    }
+
+    return obiekt
+}
+
+console.log(slovaZaLytaramy("яблуко апельсин банан арбуз виноград"))
+
+
+
+
+// №4
+// Сделайте функцию, которая параметром будет принимать число, а возвращать массив его делителей, являющихся простыми числами.
+
+
+function prostiDilyteli(chyslo) {
+    function isProste(num) {
+        if (num < 2) return false
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) return false
+        }
+        return true
+    }
+
+    let rezultat = [];
+    for (let i = 2; i <= chyslo; i++) {
+        if (chyslo % i === 0 && isProste(i)) {
+            rezultat.push(i)
+        }
+    }
+    return rezultat
+}
+
+
+console.log(prostiDilyteli(28))
+
+
+
+
+// №5
+// Сделайте функцию, которая параметром будет принимать слово и возвращать массив его слогов.
+
+
+function slogy(slovo) {
+    const holosni = "аеєиіїоуюя";
+    let rezultat = []
+    let sklad = ""
+
+    for (let i = 0; i < slovo.length; i++) {
+        sklad += slovo[i]
+        if (holosni.includes(slovo[i]) || i === slovo.length - 1) {
+            rezultat.push(sklad)
+            sklad = ""
+        }
+    }
+
+    return rezultat
+}
+
+console.log(slogy("яблуко"))
