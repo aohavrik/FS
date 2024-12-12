@@ -982,6 +982,24 @@
 
 // Дана строка. Проверьте, что эта строка состоит только из цифр.
 
+// let nust2 = '2a4a681';
+// onlik =true
+
+// nust2.split('').forEach(i => {
+//     if (isNaN(Number(i))) {
+//         onlik = false;
+//     }
+// });
+
+// if(onlik == true){
+// 	 console.log('log всі цифри');
+	 
+// } else {
+// 	console.log('не всі тут цири');
+	
+// }
+
+
 
 
 
@@ -989,6 +1007,8 @@
 
 
 // Дана строка. Проверьте, что эта строка состоит только из четных цифр.
+// let nust = '123'
+// gsg = nust.map(Number)
 
 
 
@@ -996,19 +1016,17 @@
 
 // Дан массив со числами. Удалите из него числа, имеющие два и более нуля.
 
-let two0arr = []
+// let two0arr = [];
 
-for (i = 0; i <= 1000; i += 50) {
-	two0arr.push(i)
-}
+// for (let i = 0; i <= 1000; i += 50) {
+//     two0arr.push(i);
+// }
+// let filteredArr = two0arr.filter(num => {
+//     let zeroCount = num.toString().split('').filter(j => j === '0').length;
+//     return zeroCount < 2;
+// });
 
-
-two0arr.forEach((i)=>{
-	let zxc = i.toString().split('')
-	zxc.filter((j)=> j == 0)
-})
-
-console.log(zxc);
+// console.log(filteredArr);
 
 
 
@@ -1060,3 +1078,322 @@ console.log(zxc);
 // order.push(order3)
 
 // console.log(order);
+
+
+
+
+
+
+
+// 3.10
+
+
+
+
+
+
+// №1
+// Дан массив. Сделайте так, чтобы в нем каждый элемент повторился два раза.
+
+// let arr77 = [1, 2, 3, 4, 5]
+// let doubArr = arr77.flatMap(item => [item, item])
+// console.log(doubArr)
+
+
+
+
+
+
+
+
+
+
+// №2
+// // Дан массив и число. Оставьте в массиве только те числа, которые являются делителями заданного числа.
+// let delitel=[]
+// let zaddel = 3
+// for(i=1; i<100; i++){
+// 	delitel.push(i)
+// }
+
+// let itog = delitel.filter(i => i%zaddel == 0)
+
+// console.log(itog);
+
+
+
+
+
+
+
+
+
+// №3
+// Даны два числа. Получите массив цифр, которые есть и в одном, и во втором числе.
+// let num123 = 12345;
+// let num223 = 34567;
+
+// let como = Array.from(new Set(String(num123).split('')))
+//                         .filter(digit => String(num223).includes(digit));
+// console.log(como);
+
+
+
+
+
+
+
+
+
+
+
+
+// №4
+// Дано число. Получите массив позицией всех цифр 3 в этом числе, за исключением первой и последней.
+
+// let chislo = 1233312333;
+
+// let posiarey = [];
+// let strNum = String(chislo)
+
+// for (let i = 0; i < strNum.length; i++) {
+//     if (strNum[i] === '3') {
+//         posiarey.push(i)
+//     }
+// }
+// if (posiarey.length > 2) {
+//     posiarey = posiarey.slice(1, posiarey.length - 1)
+// }
+
+// console.log(posiarey)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// №5
+// Дан массив со числами. Оставьте в нем числа, состоящие из разных цифр, а остальные удалите.
+// let nus = [123, 112, 456, 788, 901, 303];
+
+// let FilsNum = nus.filter(num => {
+//     let resa = String(num).split('')
+//     return new Set(resa).size == resa.length
+// })
+// console.log(FilsNum)
+
+
+
+
+
+
+
+
+
+
+
+// №6
+// Дан массив:
+
+// [
+// 	[1, 2, 3],
+// 	[4, 5, 6],
+// 	[7, 8, 9],
+// ]
+// Слейте элементы этого массива в один одномерный массив:
+
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// 
+
+
+// let miniarr = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+// ];
+// let flatmini = array.flat();
+// console.log(flatArray)
+
+
+
+
+
+// 4.0
+
+
+
+// №1
+// Сделайте функцию, которая вернет текущий день недели словом.
+// function getDays() {
+//     const days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота', 'Неділя'];
+//     const today = new Date().getDay();
+//     return days[today-1];
+// }
+
+// console.log(getDays()); 
+
+// №2
+// Сделайте функцию, которая параметром будет получать дату, а возвращать день недели словом, соответствующий этой дате.
+// function getDays(date) {
+//     const days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота', 'Неділя']
+//     const ind = new Date(date).getDay()
+//     return days[ind-1]
+// }
+
+// console.log(getDays('2023-12-25'))
+
+
+
+// №3
+// Сделайте функцию, которая параметром будет принимать секунды, а возвращать количество суток, соответствующих этим секундам.
+// function secday(sec) {
+//     return sec / (60 * 60 * 24)
+// }
+// console.log(secday(86400))
+
+
+
+// №4
+// Сделайте функцию, которая параметром будет принимать число и строку и обрезать эту строку до длины, заданной первым параметром.
+
+// function vkorotytyRyadok(dovzhyna, tekst) {
+//     let rezultat = ''
+
+//     for (let i = 0; i < dovzhyna && i < tekst.length; i++) {
+//         rezultat += tekst[i]
+//     }
+
+
+//     return rezultat
+// }
+// console.log(vkorotytyRyadok(5, "Привіт, Світлана!"))
+
+
+
+
+// №5
+// Сделайте функцию, которая параметром будет получать дату, а возвращать знак зодиака, соответствующий этой дате.
+
+// function znakZodiaku(data) {
+//     const zodiaky = [
+//         { znak: 'Козеріг', poch: '12-22', kin: '01-19' },
+//         { znak: 'Водолій', poch: '01-20', kin: '02-18' },
+//         { znak: 'Риби', poch: '02-19', kin: '03-20' },
+//         { znak: 'Овен', poch: '03-21', kin: '04-19' },
+//         { znak: 'Телець', poch: '04-20', kin: '05-20' },
+//         { znak: 'Близнюки', poch: '05-21', kin: '06-20' },
+//         { znak: 'Рак', poch: '06-21', kin: '07-22' },
+//         { znak: 'Лев', poch: '07-23', kin: '08-22' },
+//         { znak: 'Діва', poch: '08-23', kin: '09-22' },
+//         { znak: 'Терези', poch: '09-23', kin: '10-22' },
+//         { znak: 'Скорпіон', poch: '10-23', kin: '11-21' },
+//         { znak: 'Стрілець', poch: '11-22', kin: '12-21' }
+//     ];
+
+//     const dataVvedena = new Date(data)
+//     const misyac = String(dataVvedena.getMonth() + 1).padStart(2, '0')
+//     const den = String(dataVvedena.getDate()).padStart(2, '0')
+//     const formatData = `${misyac}-${den}`
+
+//     for (let i = 0; i < zodiaky.length; i++) {
+//         const { znak, poch, kin } = zodiaky[i]
+//         if ((formatData >= poch && formatData <= '12-31') ||  (formatData >= '01-01' && formatData <= kin)) {
+//             return znak
+//         }
+//     }
+// }
+
+// console.log(znakZodiaku('2023-10-01'))
+
+
+
+// №6
+// Сделайте функцию, которая параметром будет принимать число, а возвращать сумму его делителей.
+
+// function sumaDilnykiv(chyslo) {
+//     let suma = 0
+//     for (let i = 1; i <= chyslo; i++) {
+//         if (chyslo % i === 0) {
+//             suma += i
+//         }
+//     }
+//     return suma
+// }
+
+// console.log(sumaDilnykiv(12))
+
+
+
+
+
+
+
+
+// 4.2
+
+// №1
+// Сделайте функцию, которая параметром будет принимать число и возвращать сумму его цифр.
+
+
+
+// №2
+// Сделайте функцию, которая параметром будет принимать число и удалять из него нули.
+
+// function vydalytyNuli(chyslo) {
+//     return Number(String(chyslo).replace(/0/g, ''));
+// }
+// console.log(vydalytyNuli(102030)); 
+
+// №3
+// Сделайте функцию, которая будет возвращать сколько дней прошло или осталось до заданной даты в году, в зависимости от того, была уже эта дата или нет.
+function dniDoDaty(data) {
+    let nows = new Date()
+    let tar = new Date(data)
+    let ms = 1000 * 60 * 60 * 24
+    let dif = tar - nows;
+    return Math.round(dif / ms)
+}
+console.log(dniDoDaty('2024-12-25'))
+
+
+
+
+
+// №4
+// Сделайте функцию, которая параметром будет принимать год и проверять, високосный он или нет.
+
+
+
+
+// №5
+// Сделайте функцию, которая вернет массив всех високосных годов за предыдущие сто лет.
+
+
+
+
+// №6
+// Сделайте функцию, которая будет возвращать сколько дней осталось до конца текущего месяца.
+
+
+
+
+// №7
+// Сделайте функцию, которая вернет предыдущий, текущий и следующий дни недели словом в виде следующего объекта:
+
+
+
+
+// {
+// 	next: 'пн',
+// 	curr: 'вс',
+// 	prev: 'сб',
+// }
