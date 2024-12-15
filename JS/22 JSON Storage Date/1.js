@@ -34,13 +34,32 @@ if (!auntfic) {
     let username = JSON.parse(sessionStorage.getItem('login_user'))
     document.write(`Привіт, ${username}!`)
     document.write('<hr>');
+
+
+    //  3. Реалізуйте таймер сесії, який показує, скільки часу користувач провів на сторінці.
+    //     Час початку сесії зберігайте у cookie при оновленні сторінки він має продовжувати відлік.
+
+    let time_session = new Date();
+    let load = document.cookie.split('; ').find(row => row.startsWith('time='));
+    
+    if (load) {
+        load = load.split('=')[1];
+        time_session = new Date(parseInt(load, 10));
+    } else {
+        time_session.setHours(0, 0, 0, 0);
+    }
+   
+    setInterval(() => {
+        time_session = new Date(time_session.getTime() + 1000);
+        document.cookie = `time=${time_session.getTime()}; path=/`;
+    }, 1000);
+    
+    document.write(`${time_session.toTimeString()}`)
 }
 
 
 
 
-//  3. Реалізуйте таймер сесії, який показує, скільки часу користувач провів на сторінці.
-//     Час початку сесії зберігайте у cookie при оновленні сторінки він має продовжувати відлік.
 
 
 //  3. Створіть HTML сторінку, яка записує дату останнього входу користувача у localStorage.
