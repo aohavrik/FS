@@ -55,7 +55,7 @@ if (!auntfic) {
         document.cookie = `time=${time_session.getTime()}; path=/`
     }, 1000);
 
-        let hours = time_session.getHours()
+        let hours = time_session.getHours() -3
         let minutes = time_session.getMinutes()
         let seconds = time_session.getSeconds()
 
