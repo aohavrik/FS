@@ -39,44 +39,27 @@ if (!auntfic) {
     //  3. Реалізуйте таймер сесії, який показує, скільки часу користувач провів на сторінці.
     //     Час початку сесії зберігайте у cookie при оновленні сторінки він має продовжувати відлік.
 
-    let time_session = new Date();
-    let load = document.cookie.split('; ').find(row => row.startsWith('time='));
-    
-    if (load) {
-        load = load.split('=')[1];
-        time_session = new Date(parseInt(load, 10));
+    let time_session = new Date()
+    let load = document.cookie.split('; ').find(row => row.startsWith('time='))
+
+    if (!load) {
+        time_session.setTime(0)
+        document.cookie = `time=${time_session.getTime()}; path=/`
     } else {
-        time_session.setHours(0, 0, 0, 0);
+        let save = load.split('=')[1]
+        time_session = new Date(JSON.parse(save, 10))
     }
-   
+
     setInterval(() => {
-        time_session = new Date(time_session.getTime() + 1000);
-        document.cookie = `time=${time_session.getTime()}; path=/`;
+        time_session = new Date(time_session.getTime() + 1000)
+        document.cookie = `time=${time_session.getTime()}; path=/`
     }, 1000);
-    
-    document.write(`${time_session.toTimeString()}`)
+
+        let hours = time_session.getHours()
+        let minutes = time_session.getMinutes()
+        let seconds = time_session.getSeconds()
+
+    document.write(`Тривалість сесії: ${hours}:${minutes}:${seconds}`)
+
+
 }
-
-
-
-
-
-
-//  3. Створіть HTML сторінку, яка записує дату останнього входу користувача у localStorage.
-//     При повторному відвідуванні сторінки показуйте дату попереднього входу та оновлюйте її.
-
-
-//  4. Створіть список завдань (to-do list масив з полями title, date, describe, isDone),
-//     який зберігається в localStorage у форматі JSON.
-//     Створіть фунції які зможуть: додавати, видаляти й відмічати завдання як виконані.
-
-
-//  5. Реалізуйте таймер сесії, який показує, скільки часу користувач провів на сторінці.
-//     Час початку сесії зберігайте у sessionStorage, і при оновленні сторінки він має продовжувати відлік.
-
-
-
-
-
-// localStorage.getItem - получаем из локал стореджа
-// localStorage.setItem - записываем в локасторедж 2 значения ключ - знаечение, работает только со строгами
