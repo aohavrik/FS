@@ -1,47 +1,71 @@
 // 1. Зміна стилю елементу: Створіть HTML-сторінку з декількома елементами, такими як кнопки або тексти.
 //    Використовуючи JavaScript, змініть стиль одного або декількох елементів 
 //    (наприклад, колір фону або розмір шрифту).
+const idBTN = document.querySelector('#btn2')
+const btn_class = document.querySelectorAll('.btn')
 
-const btn_class = document.querySelector('.btn')
-btn_class.style.backgroundColor = 'red'
+btn_class.forEach((i) => {
+    i.style.backgroundColor = 'red'
+    i.style.width = "250px"
+    i.style.height = "250px"
+    i.style.fontSize = '40px'
+    
+});
 
 
-// width: 400px;
-// height: 400px;
-// border: 5px solid blue;
-// border - top - color: black;
-// border - bottom - right - radius: 100px;
-// padding: 100px 100px;
-// margin: 20px;
+
 // 2. Зміна текстового вмісту: Створіть елементи, які містять текст.
 //    За допомогою JavaScript, змініть текстовий вміст одного або декількох елементів.
 
-
+const taska2 = document.querySelector('.task2')
+taska2.innerText = 'Привіт як справи?'
+taska2.classList.add('box')
 
 
 
 // 3. Додавання нового елементу: За допомогою JavaScript,
 //    додайте 3 нові елемент до DOM-структури.
 
+const newDiv = document.createElement('div')
+newDiv.classList.add('box2')
+newDiv.innerText = 'Новий DIV'
+taska2.appendChild(newDiv)
 
 
 
+const newP = document.createElement('p')
+newP.innerText = 'Тут новий текст'
+document.body.appendChild(newP)
+
+
+const newSpan = document.createElement('b')
+newSpan.innerText = ' Тут ще оди новий текст, але в b'
+newP.appendChild(newSpan)
 
 // 4. Видалення елементу: За допомогою JavaScript, видаліть декілька елементів з DOM.
 
-
-
+document.body.removeChild(idBTN)
+taska2.removeChild(newDiv)
 
 // 5. Зміна атрибутів: Створіть елементи, які мають атрибути
 //    (наприклад, "src" для зображення або "href" для посилання).
 //    За допомогою JavaScript, змініть атрибути цих елементів.
 
+const imgs =  document.querySelector("img")
+imgs.setAttribute('src', 'https://i.allo.ua/media/catalog/product/cache/1/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s721_galaxys24fe_graphite_front_result_2.webp');
+imgs.setAttribute('alt', 'Нове зображення')
 
-
-
+ 
 
 // 6. Сортування списку: Створіть список (наприклад, список <ul>) з декількома пунктами.
 //    Використовуючи JavaScript, відсортуйте цей список в алфавітному порядку.
+
+const ul = document.getElementById('list')
+const listItems = Array.from(ul.querySelectorAll('li'))
+listItems.sort((a, b) => a.innerText.localeCompare(b.innerText))
+
+ul.innerHTML = ''
+listItems.forEach(i => ul.appendChild(i))
 
 
 
@@ -51,6 +75,26 @@ btn_class.style.backgroundColor = 'red'
 //    змініть порядок цих елементів в DOM.
 
 
+const container = document.createElement('div');
+const kub1 = document.createElement('div');
+const kub = document.createElement('div');
+const boxx3 = document.createElement('div');
+
+kub1.innerText = 'Перший елемент';
+kub.innerText = 'Другий елемент';
+boxx3.innerText = 'Третій елемент';
+
+
+container.appendChild(kub1);
+container.appendChild(kub);
+container.appendChild(boxx3);
+
+document.body.appendChild(container);
+
+container.innerHTML = ''
+container.appendChild(boxx3)
+container.appendChild(kub1) 
+container.appendChild(kub) 
 
 
 
@@ -60,13 +104,16 @@ btn_class.style.backgroundColor = 'red'
 
 
 
-// 9. Зміна класів: Створіть сторінку з елементами, які мають CSS-класи. За допомогою JavaScript, змініть класи цих елементів без використання подій.
+const fam =  document.querySelector(".container")
+const cub1 = document.querySelector('.kub1')
+const cub2 = document.querySelector('.kub2')
+const cub3 = document.querySelector('.kub3')
+fam.removeChild(cub1)
+fam.removeChild(cub2)
+fam.removeChild(cub3)
 
 
 
 
 
 
-// 10. Зміна HTML-структури: Створіть сторінку з деревом DOM-структури.
-//     Використовуючи JavaScript, змініть HTML-структуру шляхом додавання нових елементів,
-//     переміщення або видалення існуючих елементів.
