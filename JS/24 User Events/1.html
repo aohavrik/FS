@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <style>
+        .kub {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+
+        }
+
+        .box1 {
+            width: 125px;
+            height: 125px;
+            background-color: rgb(4, 131, 17);
+        }
+
+        .box3  {
+            width: 75px;
+            height: 75px;
+            background-color: rgb(72, 72, 124);
+        }
+
+        .div1 {
+            width: 125px;
+            height: 125px;
+            background-color: rgb(4, 131, 17);
+        }
+
+        .div3 {
+            width: 75px;
+            height: 75px;
+            background-color: rgb(72, 72, 124);
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        .onclick {
+            background-color: rebeccapurple
+        }
+    </style>
+
+    <div class="wrap">
+        <div class="box" id="klik1"></div>
+        <div class="box" id="klik2"></div>
+    </div>
+
+
+    <div class="wrap">
+        <div class="textblok">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquam in excepturi quo
+            eaque ratione labore repellat quibusdam deleniti velit enim vitae dolor, modi omnis voluptatibus voluptatem
+            ut placeat minima.</div>
+    </div>
+
+    <div class="wrap ">
+
+        <div class="kub" id="muv"> </div>
+
+    </div>
+
+
+    <div class="wrap">
+        <div class="box1">
+            <div class="box2 kub">
+                <div class="box3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="div1">
+            <div class="div2 kub">
+                <div class="div3"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="./1.js"></script>
 </body>
+
 </html>
