@@ -89,3 +89,18 @@ boxClick2(div3, 'кубік - 3');
 
 // 6. Використайте будь яку форму з домашної про форми (в модулі HTML\CSS), та отримайте дані з неї у вигляді об'єкту,
 //    виведіть об'єкт форми в консоль. Відмініть поведінку за замовчуванням для кнопки submit у формі (Див. лекцію). 
+
+document.getElementById('but1').addEventListener('click', (e) => {
+    e.preventDefault()
+
+    const form = document.forms.namedItem('myFormAPI')
+    const formData = new FormData(form)
+
+    const formRes = {}
+
+    formData.forEach((i, y) => {
+        formRes[y] = i
+    });
+
+});
+console.log(formRes)

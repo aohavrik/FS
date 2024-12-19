@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./2.css">
 </head>
 
 <body>
@@ -86,6 +87,70 @@
             </div>
         </div>
     </div>
+
+
+    <div class="wraps">
+        
+        <form action="" id="myFormAPI" name="nameForms">
+        
+            <div class="anketa">Заповніть анкету:</div>
+
+
+            <div class="inp">
+                <div class="colum1"><label for="nam">Імя</label></div>
+                <div class="colum2"><input type="text" placeholder="Ім'я" name="nam" id="fname"></div>
+            </div>
+
+
+            <div class="inp">
+                <div class="colum1"><label for="passwor1">Пароль</label></div>
+                <div class="colum2"><input type="password" placeholder="Пароль"></div>
+            </div>
+
+            <div class="inp">
+                <div class="colum1"><label for="passwor1">Повторіть пароль</label></div>
+                <div class="colum2"> <input name="passwor1" type="password" placeholder="Повторити пароль"></div>
+            </div>
+
+
+            <div class="inp">
+                <div class="colum1"> <label for="dat">Дата народження</label></div>
+                <div class="colum2"><input type="date" name="dat"></div>
+            </div>
+
+
+
+
+            <div class="inp">
+                <div class="colum1"><label for="years">вік</label></div>
+                <div class="colum2"><input type="number" placeholder="вік" name="years"></div>
+            </div>
+
+            <div class="sex1">Стать:</div>
+
+            <div class="inp">
+                <div class="colum3"><input type="radio" name="sex" id="male"><label for="male">Чоловік</label></div>
+                <div class="colum4"><input type="radio" name="sex" id="female"><label for="female">Жінка</label></div>
+            </div>
+
+
+            <div class="inp">
+                <div class="colum1"><label for="опис">опис</label></div>
+                <div class="colum2"> <textarea name="опис" id="опис" cols="40" rows="5"></textarea></div>
+            </div>
+
+
+
+            <div class="but">
+                <input id="but1" type="submit" value="Надіслати">
+            </div>
+
+        </form>
+
+    </div>
+
+
+
 
     <script src="./1.js"></script>
 </body>
