@@ -66,6 +66,25 @@ boxClick(box3, 'кубік - 3');
 // 5. Створіть ще 3 кубіка які є один в одному, змініть напрямок виконання івенту,
 //    зупиніть виконання івентів на другому івенті (Див. лекцію).
 
+const div1 = document.querySelector('.div1');
+const div2 = document.querySelector('.div2');
+const div3 = document.querySelector('.div3');
+
+function boxClick2(i, log) {
+    i.addEventListener('click', (e) => {
+        console.log(log);
+        if (log === 'кубік - 2') {
+            e.stopPropagation()
+        }
+    }, true)
+}
+
+boxClick2(div1, 'кубік - 1');
+boxClick2(div2, 'кубік - 2');
+boxClick2(div3, 'кубік - 3');
+
+
+
 
 
 // 6. Використайте будь яку форму з домашної про форми (в модулі HTML\CSS), та отримайте дані з неї у вигляді об'єкту,
