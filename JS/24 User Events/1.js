@@ -39,10 +39,10 @@ text_blok.oncopy = (i) => {
 
 const maus = document.getElementById("muv")
 maus.onmousemove = (i) => {
-    const r = i.offsetX / maus.clientWidth
-    const g = i.offsetY / maus.clientHeight
-    const b = (r + g) / 2
-    maus.style.backgroundColor = `rgb(${r * 256},${g * 256},${b * 256})`
+    const r = Math.floor(i.clientX)
+    const g = Math.floor(i.clientY)
+    const b = Math.floor((i.clientX+i.clientY)/2)
+    maus.style.backgroundColor = `rgb(${r},${g},${b})`
 }
 
 
@@ -92,6 +92,8 @@ boxClick2(div3, 'кубік - 3');
 
 document.getElementById('but1').addEventListener('click', (e) => {
     e.preventDefault()
+
+    // const form = document.forms.namedItem('myFormAPI')
     const formData = new FormData(form)
 
     const formRes = {}
@@ -100,5 +102,5 @@ document.getElementById('but1').addEventListener('click', (e) => {
         formRes[y] = i
     });
 
+    console.log(formRes)
 });
-console.log(formRes)
