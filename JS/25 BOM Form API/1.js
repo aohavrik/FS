@@ -4,14 +4,13 @@
 // const prom = prompt('Введіть')
 
 if (prom.startsWith("http")) {
-    window.location.href = prom
-    console.log('aaa');
+  window.location.href = prom
+  console.log('aaa');
 
-  } else {
-    window.location.href = "http://"+prom
-    console.log('aaassss');
-
-  }
+} else {
+  window.location.href = "http://" + prom
+  console.log('aaassss');
+}
 
 // 2. Створити функцію яка буде показувати на екрані геолокацію та url шлях сайту.
 function info() {
