@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    <style>
+        #anim {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+        }
+        @keyframes move {
+            from {left: 0;}
+            to {left: 90%;}
+        }
+    </style>
+</head>
+<body>
+    <button id="start">Старт</button>
+    <div id="anim"></div>
+    <script src="2.js"></script>
+</body>
+</html>
