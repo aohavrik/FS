@@ -40,7 +40,7 @@ userButton2.addEventListener("click", () => {
 })
 
 
-
+//ниже готовое:
 
 // const userId = +userInput.value
 // fetch('https://jsonplaceholder.typicode.com/users').then(res => {
