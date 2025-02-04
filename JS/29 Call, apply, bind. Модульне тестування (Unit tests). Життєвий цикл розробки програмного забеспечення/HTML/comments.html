@@ -7,29 +7,32 @@
 </head>
 <body>
     <style>
-        #com {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
+        #coms {
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
         }
 
-        #com2 {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
+        #inp {
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #inp2 {
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #coms2 {
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
         }
 
-        .comments {
+        .com {
             margin: 10px;
             padding: 10px;
             border: 2px solid black;
-            width: 30%;
             
         }
 
@@ -38,27 +41,49 @@
             justify-content: center;
         }
     </style>
+</head>
+
+<body>
     <hr>
     <div class="h_2">
-        <hr>
         <h2>fetch</h2>
-        <hr>
+    </div>
+    <hr>
+    <div>
+        <div id="inp">
+            <input type="number" id="comsInput" placeholder="введіть ІД коментаря">
+            <button id="comsButton">пошук</button>
+        </div>
+        <ul id="coms">
+
+        </ul>
     </div>
     <hr>
 
 
-    <div id="com"></div>
 
 
-    <hr>
+
+
+
+
     <div class="h_2">
-        <hr>
         <h2>XMLHttpRequest</h2>
-        <hr>
     </div>
     <hr>
 
-    <div id="com2"></div>
+
+    <div>
+        <div id="inp2">
+            <input type="number" id="comsInput2" placeholder="введіть ІД коментаря">
+            <button id="comsButton2">пошук</button>
+        </div>
+        <ul id="coms2">
+
+        </ul>
+    </div>
+    </div>
+
 
     <script src="../JS/comments.js"></script>
 </body>

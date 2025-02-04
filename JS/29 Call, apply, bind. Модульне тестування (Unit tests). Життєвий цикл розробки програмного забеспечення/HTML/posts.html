@@ -8,26 +8,32 @@
 <body>
     <style>
         #posts {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #inp {
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
+        }
+        #inp2 {
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
         }
         #posts2 {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
         }
+
         .post {
             margin: 10px;
             padding: 10px;
             border: 2px solid black;
-            width: 30%;
+            
         }
 
         .h_2 {
@@ -35,27 +41,49 @@
             justify-content: center;
         }
     </style>
+</head>
+
+<body>
     <hr>
     <div class="h_2">
-        <hr>
         <h2>fetch</h2>
-        <hr>
+    </div>
+    <hr>
+    <div>
+        <div id="inp">
+            <input type="number" id="postsInput" placeholder="введіть ІД поста">
+            <button id="postsButton">пошук</button>
+        </div>
+        <ul id="posts">
+
+        </ul>
     </div>
     <hr>
 
 
-    <div id="posts"></div>
 
 
-    <hr>
+
+
+
+
     <div class="h_2">
-        <hr>
         <h2>XMLHttpRequest</h2>
-        <hr>
     </div>
     <hr>
 
-    <div id="posts2"></div>
+
+    <div>
+        <div id="inp2">
+            <input type="number" id="postsInput2" placeholder="введіть ІД поста">
+            <button id="postsButton2">пошук</button>
+        </div>
+        <ul id="posts2">
+
+        </ul>
+    </div>
+    </div>
+
 
     <script src="../JS/posts.js"></script>
 </body>
