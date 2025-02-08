@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Морський бій</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100%;
+            background-color: #eef6fc;
+            /* Легкий блакитний відтінок */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            color: #003366;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        td {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .vluch {
+            background-color: red;
+        }
+
+        .promah {
+            background-color: lightgray;
+        }
+
+        #restart {
+            margin-top: 15px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            outline: none;
+        }
+
+        #restart:hover {
+            background-color: #005f99;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Морський бій</h1>
+    <p>Кліків залишилось: <span id="res">20</span></p>
+    <p id="stan"></p>
+    <table id="pole"></table>
+    <button id="restart">Перезапуск</button>
+
+    <script src="./1.js"></script>
+</body>
+
+</html>
