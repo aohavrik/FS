@@ -1,13 +1,18 @@
-function Content ({
-    title, describe
-}){
-    return(
+import React from "react";
+import Count from "./Count";
+function Content() {
+  const Obj = {
+    title: 'Title',
+    describe: 'describe'
+  }
+
+    return (
         <nav>
-            <div>Контент</div>
-            <div>Не головна 1</div>
-            <div>Не головна 2</div>
-            <div>Не головна 3</div>
-            <div> </div>
+            <div><h2>Контент</h2></div>
+         <Count/>
+
+         <h1>{Obj.title}</h1>
+         <p>{Obj.describe}</p>
         </nav>
     )
 }

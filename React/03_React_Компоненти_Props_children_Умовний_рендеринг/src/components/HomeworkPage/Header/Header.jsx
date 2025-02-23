@@ -1,11 +1,12 @@
-function Header (data){
-    return(
+function Header(props) {
+    return (
         <nav>
-            <div>Хедер</div>
-            <div>Не головна 1</div>
-            <div>Не головна 2</div>
-            <div>Не головна 3</div>
+            <div><h2>Хедер</h2></div>
+            <div>
+                {props.name.world} {/* Тепер правильно звертаємось до значення */}
+            </div>
         </nav>
-    )
+    );
 }
-export default Header
+
+export default Header;

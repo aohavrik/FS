@@ -1,10 +1,10 @@
-function Footer (){
-    return(
+function Footer(props) {
+    return (
         <nav>
-            <div>Футер</div>
-            <div>Не головна 1</div>
-            <div>Не головна 2</div>
-            <div>Не головна 3</div>
+            <div><h2>Футер</h2></div>
+            <div>
+              {props.name.end}
+            </div>
         </nav>
     )
 }

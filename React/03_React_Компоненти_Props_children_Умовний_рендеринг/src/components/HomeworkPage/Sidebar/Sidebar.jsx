@@ -1,11 +1,11 @@
-function Sidebar (data){
-    return(
+function Sidebar(props) {
+    return (
         <nav>
-            <div>Сайдбар</div>
-            <div>{data.one}</div>
-            <div>Не головна 1</div>
-            <div>Не головна 2</div>
-            <div>Не головна 3</div>
+            <div><h2>Сайдбар</h2></div>
+            <div>
+                {props.name.content}
+                </div>
+
         </nav>
     )
 }

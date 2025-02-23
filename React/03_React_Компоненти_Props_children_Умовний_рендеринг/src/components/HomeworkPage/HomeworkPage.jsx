@@ -8,21 +8,28 @@ import './HomeworkPage.css'
 
 
 function HomePage() {
-    const n1 = 'hello world'
-    const n2 = 2222
+    const props_header = {
+        world: 'Hello Worlde!',
+    }
+    const Props_Sidebar = {
+        content: 'lorem content'
+    }
+    const props_end =  {
+        end: 'lorem End'
+    }
 
     return (
         <div className='homepage'>
 
-            <Header />
+            <Header name ={props_header} />
 
             <div className='centr'>
-                <Sidebar one='111' text={12} />
+                <Sidebar name={Props_Sidebar} />
 
-                <Content hello={n1} var2={n2}/>
+                <Content />
             </div>
 
-            <Footer />
+            <Footer name={props_end}/>
 
         </div>
     );

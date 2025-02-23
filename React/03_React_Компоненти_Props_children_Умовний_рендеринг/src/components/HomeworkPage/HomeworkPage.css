@@ -5,18 +5,9 @@
 }
 
 .centr {
+    margin: 100px 0;
+
     display: flex;
     width: 80%;
     justify-content: space-between;
 }
-
-/* .content {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-button {
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-} */
