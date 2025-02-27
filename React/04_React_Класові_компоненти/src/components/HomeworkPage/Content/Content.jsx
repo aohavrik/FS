@@ -21,8 +21,7 @@ export class Content extends Component {
     return (
       <nav>
         <div><h2>Контент</h2></div>
-        <Count/>
-
+        <Count/> 
         <h1>{this.Obj.title}</h1>
         <p>{this.Obj.describe}</p>
       </nav>
