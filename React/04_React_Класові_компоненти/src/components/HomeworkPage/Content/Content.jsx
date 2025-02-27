@@ -3,17 +3,6 @@ import { Component } from "react";
 import {Count} from "./Count";
 
 
-function Content() {
-  const Obj = {
-    title: 'Title',
-    describe: 'describe'
-  }
-
-  return (
-        <div></div>
-    )
-}
-export default Content
 
 
 
@@ -27,17 +16,15 @@ export class Content extends Component {
   }
 
 
-  constructor(props){
-    super()
-  }
+
   render() {
     return (
       <nav>
         <div><h2>Контент</h2></div>
-        <Count />
+        <Count/>
 
-        <h1>{Obj.title}</h1>
-        <p>{Obj.describe}</p>
+        <h1>{this.Obj.title}</h1>
+        <p>{this.Obj.describe}</p>
       </nav>
     )
   }

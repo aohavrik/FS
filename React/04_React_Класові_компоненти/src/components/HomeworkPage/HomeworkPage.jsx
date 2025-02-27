@@ -1,38 +1,38 @@
-import  {Header} from './Header/Header';
-// import Footer from './Footer/Footer';
-// import Content from './Content/Content';
-// import Sidebar from './Sidebar/Sidebar';
-
-
+import { Component } from 'react';
+import { Header } from './Header/Header';
+import {Footer} from './Footer/Footer';
+import {Content} from './Content/Content';
+import {Sidebar} from './Sidebar/Sidebar';
 import './HomeworkPage.css'
 
 
-function HomePage() {
-    const props_header = {
+export class HomeworkPage extends Component{
+    props_class = {
         world: 'Hello Worlde!',
-    }
-    const Props_Sidebar = {
-        content: 'lorem content'
-    }
-    const props_end =  {
+        content: 'lorem content',
         end: 'lorem End'
     }
 
-    return (
-        <div className='homepage'>
 
-            <Header name_header ={props_header} />
+    render(){
+        return(
+    <div className='homepage'>
 
-            <div className='centr'>
-                {/* <Sidebar name={Props_Sidebar} /> */}
+        <Header name_header={this.props_class} />
 
-                {/* <Content /> */}
-            </div>
+        <div className='centr'>
+            <Sidebar name_Sidebar={this.props_class} />
 
-            {/* <Footer name={props_end}/> */}
-
+            <Content />
         </div>
-    );
+
+        <Footer name_Footer={this.props_class}/>
+
+    </div>
+
+        )
+    }
 }
 
-export default HomePage;
+
+

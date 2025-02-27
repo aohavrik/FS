@@ -27,7 +27,7 @@ state={
                 <button onClick={this.add}>+</button>
 
                 <span style={{ color: 'red', fontSize: '24px' }}>
-                
+                {this.state.count}
                 </span>
 
                 <button onClick={this.min}>-</button>
